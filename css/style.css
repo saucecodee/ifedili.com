@@ -11,9 +11,10 @@
 body {
   background: #060a15;
   color: #c3d1f3;
-  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h3 {
@@ -28,12 +29,17 @@ p {
 }
 
 header {
+  position: fixed;
+  background: linear-gradient(90deg, rgba(235, 59, 91, 0.05), rgba(255, 255, 255, 0)), #060a15;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  height: 80px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  box-sizing: border-box;
 }
 
 header ul {
@@ -48,6 +54,17 @@ header ul li {
 header ul li:hover {
   color: #eb3b5a;
   cursor: pointer;
+}
+
+.hamburger-menu div{
+  position: relative;
+  display: none;
+  background: #c3d1f3;
+  height: 3px;
+  width: 30px;
+  margin: 5px 0;
+  border-radius: 5px;
+  z-index: 10;
 }
 
 .container {
@@ -104,6 +121,7 @@ header ul li:hover {
   background: url("../img/mm.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 100vh;
   transition: 0.3s all ease-in-out;
   animation: m-show 2.5s ease forwards 3.3s;
 }
@@ -123,12 +141,13 @@ header ul li:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
 }
 
 .show h6 {
   color: #eb3b5a;
   font-size: 1rem;
+  margin-top: 30px;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -211,13 +230,36 @@ header ul li:hover {
 /* About me
 /* ==================================================== */
 #about {
-  padding: 100px 0;
+  margin: 100px auto;
+
+}
+.about-cont {
   display: flex;
 }
 
 #about img {
   width: 25%;
   margin-right: 30px;
+}
+
+/* ==================================================== */
+/* My tools
+/* ==================================================== */
+
+.owl-carousel{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.owl-carousel div img{
+  width: 170px;
+  filter: grayscale();
+}
+
+
+.owl-carousel div img:hover{
+  width: 170px;
+  filter: none;
 }
 
 /* ==================================================== */
@@ -231,9 +273,9 @@ header ul li:hover {
 
 
 .blog-card{
-  background: #eb3b5a;
+  background: #ffffff1f;
   height: 400px;
-  width: 300px;
+  width: 32%;
 }
 
 
@@ -244,13 +286,40 @@ header ul li:hover {
 
 @media only screen and (max-width: 768px) {
 
+  header{
+    height: 50px;
+  }
+
   .main-show {
-    background: url("../img/mm.jpg") no-repeat -1000px -50px;
+    background: url("../img/mm.jpg") no-repeat -900px -50px;
   }
   
-  header ul {
+  header nav {
     display: none;
   }
+
+  /* header nav {
+    position: absolute;
+    background: rgba(235, 59, 91, 0.95);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
+  }
+
+  header ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  header ul li{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+  } */
 
   #intro {
     transition: 0.3s all ease-in-out;
@@ -285,15 +354,19 @@ header ul li:hover {
     width: 100%;
   }
 
-  #about {
+  .about-cont {
     flex-direction: column;
     padding: 20px;
   }
 
-  #about img {
+  .about-cont img {
     width: 100%;
     height: inherit;
     margin: 0 0 20px;
+  }
+
+  .hamburger-menu div{
+    display: block
   }
 }
 
@@ -303,13 +376,10 @@ header ul li:hover {
     width: 100%;
   }
 
-  body{
-    height: 100vh;
-  }
-
   .container {
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
   }
 
   .show h2, .show h1, .show h6, .show p{
