@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+}
+
 h4 {
   font-size: 1.5rem;
   font-family: "Roboto Mono", monospace;
@@ -26,6 +30,10 @@ h4 {
 p {
   line-height: 1.5rem;
   letter-spacing: 1px;
+}
+
+.blur{
+  filter: blur(3px);
 }
 
 header {
@@ -48,6 +56,7 @@ header ul {
 }
 
 header ul li {
+  color: #3bebca;
   margin: 0 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -150,19 +159,16 @@ header ul li:hover {
 }
 
 .show h6 {
-  color: #eb3b5a;
   color: #3bebca;
+  color: #eb3b5a;
   font-size: 2rem;
-  margin-top: 30px;
   font-family: "Roboto Mono", monospace;
 }
 
 .show h1 {
-  color: #ebf0fb;
-  color: #eb3b5a;
-  text-shadow: 3px 1px #3bebca;
-  margin: 10px 0;
-  font-size: 8em;
+  color: #3bebca;
+  text-shadow: 5px 1px #eb3b5a;
+  font-size: 9em;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   transition: 0.5s all ease-in-out;
@@ -180,15 +186,10 @@ header ul li:hover {
   }
 }
 
-.show h1:hover {
-  color: #3bebca;
-  text-shadow: 3px 1px #eb3b5a;
-
-}
-
 .show h3 {
-  margin: 0 0 20px;
-  font-size: 2rem;
+  margin: 0 0 10px;
+  font-size: 4em;
+  line-height: 100%;
   animation: slide-down-h2 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 4.9s;
 }
 
@@ -219,17 +220,29 @@ header ul li:hover {
   }
 }
 
-.show a {
-  color: #eb3b5a;
-  color: #3bebca;
-  background: rgba(59, 235, 203, 0.1);
-  width: max-content;
+.contact{
+  display: flex;
   margin-top: 50px;
-  padding: 10px 20px;
-  /* border: 1px solid #eb3b5a; */
-  /* border: 1px solid #3bebca; */
-  font-family: "Roboto Mono", monospace;
-  animation: slide-down-a 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5.4s;
+}
+
+.contact a img {
+  width: 20px;
+}
+
+.contact a {
+  background: rgba(234, 61, 92, 0.1);
+  color: #eb3b5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  /* font-family: "Roboto Mono", monospace; */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s all ease-in-out;
+  animation: slide-down-a 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 5.5s;
 }
 
 @keyframes slide-down-a {
@@ -243,25 +256,63 @@ header ul li:hover {
   }
 }
 
+.contact a:hover {
+  border-radius: 0;
+}
+
+.contact a:nth-child(1) {
+  animation-delay: 5.65s;
+}
+
+.contact a:nth-child(2) {
+  animation-delay: 5.80s;
+}
+
+.contact a:nth-child(3) {
+  animation-delay: 5.95s;
+}
+
+.contact a:nth-child(4) {
+  animation-delay: 5.95s;
+}
+
+.scroll-down{
+  color: #3bebca;
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(100vh - 60px);
+  transform: rotate(90deg);
+  font-size: 2em;
+  font-weight: 600;
+  z-index: 1000;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+@keyframes scroll-down {
+  60% {
+    transform: rotate(90deg) translateX(-10px);
+  }
+  100% {
+    transform: rotate(90deg) translateX(0);
+  }
+}
+
 /* ==================================================== */
 /* About me
 /* ==================================================== */
 #about {
-  margin: 100px auto;
-
-}
-.about-cont {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 100px auto;
+  box-sizing: border-box;
 }
 
-#about img {
-  width: 25%;
-  margin-right: 30px;
+#about p{
+  text-align: center;
 }
-
-/* ==================================================== */
-/* My tools
-/* ==================================================== */
 
 .owl-carousel{
   display: flex;
@@ -275,7 +326,7 @@ header ul li:hover {
 
 
 .owl-carousel div img:hover{
-  width: 170px;
+  transform: scale(1.1);
   filter: none;
 }
 
@@ -308,24 +359,31 @@ header ul li:hover {
   }
 
   .main-show {
-    background: url("../img/mm.jpg") no-repeat -900px -50px;
+    background: url("../img/mm.jpg") no-repeat -1000px -50px;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
   }
+
+  .show h3 {
+    margin: 0 0 5px;
+    font-size: 3em;
+  }
+
 
   header nav{
     display: block;
     position: absolute;
-    background: #eb3b5b;
+    background: rgba(235, 59, 91, 0.95);
     top: 0;
     right: 0;
     height: 100vh;
-    width: 100vw;
+    width: calc(100vw - 60px);
     z-index: 9;
-    opacity: 0;
-    border-radius: 0 0 500px 500px;
+    opacity: 0.8;
+    border-radius: 0 500px;
     transition: all 0.5s ease-in-out;
     transform: translateY(-100%);
   }
-  
 
   .mobile-header nav {
     opacity: 1;
