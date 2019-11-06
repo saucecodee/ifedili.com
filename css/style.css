@@ -355,13 +355,12 @@ header ul li:hover {
 @media only screen and (max-width: 768px) {
 
   header{
-    height: 50px;
+    height: 60px;
   }
 
   .main-show {
     background: url("../img/mm.jpg") no-repeat -1000px -50px;
     background-attachment: fixed;
-    background-blend-mode: overlay;
   }
 
   .show h3 {
