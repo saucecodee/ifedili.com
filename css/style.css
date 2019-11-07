@@ -298,16 +298,21 @@ header ul li:hover {
   z-index: 1000;
   /* animation: scroll-down-show 1s ease-in-out 7s; */
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  animation: scroll-down 1s ease-in-out infinite;
+  animation: scroll-down 2s ease-in-out infinite;
 }
 
 @keyframes scroll-down {
-  60% {
-    opacity: 1;
+
+  0% {
+    transform: rotate(90deg) translateX(0px);
+  }
+  80% {
+    transform: rotate(90deg) translateX(0px);
+  }
+  90% {
     transform: rotate(90deg) translateX(-50px);
   }
   100% {
-    opacity: 1;
     transform: rotate(90deg) translateX(0);
   }
 }
@@ -508,9 +513,13 @@ header ul li:hover {
     transition: 0.3s;
   }
 
+  header #menu-btn div:nth-child(2) {
+    height: 4px;
+  }
+
   .mobile-header #menu-btn div:nth-child(1) {
     height: 4px;
-    transform: rotate(45deg) translateY(12px);
+    transform: rotate(45deg) translate(7px, 7px);
   }
   
   .mobile-header #menu-btn div:nth-child(2) {
@@ -519,7 +528,7 @@ header ul li:hover {
   
   .mobile-header #menu-btn div:nth-child(3) {
     height: 4px;
-    transform: rotate(-45deg) translateY(-12px);
+    transform: rotate(-45deg) translate(6px, -6px);
   }
 
   .mobile-header ul li {
