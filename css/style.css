@@ -65,6 +65,7 @@ header ul li {
   margin: 0 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 14px;
 }
 
 header ul li:hover {
@@ -231,7 +232,7 @@ header ul li:hover {
 }
 
 .contact a img {
-  width: 20px;
+  width: 30px;
 }
 
 .contact a {
@@ -295,7 +296,7 @@ header ul li:hover {
 
 @keyframes scroll-down {
   60% {
-    transform: rotate(90deg) translateX(-10px);
+    transform: rotate(90deg) translateX(-30px);
   }
   100% {
     transform: rotate(90deg) translateX(0);
@@ -462,7 +463,7 @@ header ul li:hover {
 
   header ul li {
     margin: 20px 0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
   }
 
@@ -472,15 +473,17 @@ header ul li:hover {
   }
 
   .mobile-header #menu-btn div:nth-child(1) {
-    transform: rotate(45deg) translateY(11px);
+    height: 4px;
+    transform: rotate(45deg) translateY(12px);
   }
-
+  
   .mobile-header #menu-btn div:nth-child(2) {
     opacity: 0;
   }
-
+  
   .mobile-header #menu-btn div:nth-child(3) {
-    transform: rotate(-45deg) translateY(-11px);
+    height: 4px;
+    transform: rotate(-45deg) translateY(-12px);
   }
 
   .mobile-header ul li {
@@ -504,16 +507,16 @@ header ul li:hover {
   }
 
   .mobile-header ul li:nth-child(2) {
-    animation-delay: 0.025s;
-  }
-  .mobile-header ul li:nth-child(3) {
     animation-delay: 0.05s;
   }
+  .mobile-header ul li:nth-child(3) {
+    animation-delay: 0.1s;
+  }
   .mobile-header ul li:nth-child(4) {
-    animation-delay: 0.075s;
+    animation-delay: 0.150s;
   }
   .mobile-header ul li:nth-child(5) {
-    animation-delay: 0.1s;
+    animation-delay: 0.2s;
   }
 
   #intro {
