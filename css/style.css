@@ -8,6 +8,10 @@
   border: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #060a15;
   color: #c3d1f3;
@@ -25,6 +29,7 @@ h4 {
   font-size: 1.5rem;
   font-family: "Roboto Mono", monospace;
   color: #eb3b5a;
+  margin-bottom: 20px;
 }
 
 p {
@@ -137,7 +142,7 @@ header ul li:hover {
   }
 }
 
-.main-show {
+#home {
   background: url("../img/mm.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -291,15 +296,30 @@ header ul li:hover {
   font-size: 2em;
   font-weight: 600;
   z-index: 1000;
+  /* animation: scroll-down-show 1s ease-in-out 7s; */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   animation: scroll-down 1s ease-in-out infinite;
 }
 
 @keyframes scroll-down {
   60% {
-    transform: rotate(90deg) translateX(-30px);
+    opacity: 1;
+    transform: rotate(90deg) translateX(-50px);
   }
   100% {
+    opacity: 1;
     transform: rotate(90deg) translateX(0);
+  }
+}
+
+@keyframes scroll-down-show {
+  0% {
+    opacity: 0;
+    transform:translateY(-1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(90deg) translateY(0);
   }
 }
 
@@ -360,15 +380,32 @@ header ul li:hover {
   box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+.blog-card:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card .blog-card-img {
+  width: 100%;
+  height: 180px;
+  overflow-y: hidden;
+  padding: 0;
 }
 
 .blog-card img {
   width: 100%;
-  height: 180px;
+}
+
+.blog-card hr {
+  margin: 10px 0;
+  border: 0.5px solid #eb3b5a;
 }
 
 .blog-card div {
-  padding: 0px 20px;
+  padding: 15px 20px 0px;
 }
 
 .blog-card div span {
@@ -403,7 +440,7 @@ header ul li:hover {
   background: rgba(195, 209, 243, 0.1);
   color: #eb3b5a;
   color: #3bebca;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1px;
   padding: 7px 15px;
   border-radius: 5px;
@@ -423,7 +460,7 @@ header ul li:hover {
     height: 60px;
   }
 
-  .main-show {
+  #home {
     background: url("../img/mm.jpg") no-repeat -1000px -50px;
     background-attachment: fixed;
   }
@@ -464,7 +501,6 @@ header ul li:hover {
   header ul li {
     margin: 20px 0;
     font-size: 30px;
-    font-weight: 600;
   }
 
   #menu-btn div {
