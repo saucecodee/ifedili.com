@@ -114,7 +114,7 @@ header ul li:hover {
   align-items: center;
   justify-content: center;
   z-index: 200;
-  animation: slide-in-bottom 3s ease-in-out;
+  animation: slide-in-bottom 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-bottom {
@@ -125,7 +125,6 @@ header ul li:hover {
   100% {
     transform: translateX(100%);
     opacity: 0;
-    display: none;
   }
 }
 
@@ -389,7 +388,7 @@ header ul li:hover {
 }
 
 .blog-card:hover{
-  transform: scale(1.1);
+  transform: scale(1.02);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
