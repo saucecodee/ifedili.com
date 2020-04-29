@@ -1,0 +1,13 @@
+*{
+     padding: ;
+}
+
+body{
+     position: relative;
+     min-height: 100vh;
+}
+
+.tabs{
+     position: fixed;
+     bottom: 0;
+}
