@@ -1,6 +1,6 @@
 :root {
      --primary-color: #3867d6;
-     --text-color: #111f40;
+     --text-color: #ebf0fb;
 
      --shadow1: 0px 3px 9px #060a15;
 
@@ -50,7 +50,7 @@ p {
 }
 
 body {
-     background: #ebf0fb;
+     background: #060a15;
 }
 
 main {
@@ -74,6 +74,11 @@ section {
      display: flex;
      flex-direction: column;
      justify-content: center;
+}
+
+#home h1{
+     color: #afc2ef;
+     margin: 1rem 0 1rem;
 }
 
 #projects article{
@@ -108,7 +113,7 @@ section {
 
 #projects .tools li {
      margin-right: 1rem;
-     color: #2d52ab;
+     color: #afc2ef;
 }
 
 .tabs-container {
@@ -120,7 +125,7 @@ section {
 }
 
 .tabs {
-     background: white;
+     background: #0b152b;
      display: flex;
      align-items: center;
      justify-content: space-evenly;
