@@ -93,6 +93,26 @@ section {
      margin: 1.5rem 0 2rem;
 }
 
+#about h4{
+     color: var(--secondary-color);
+     text-align: center;
+     margin-bottom: 0.5rem;
+}
+
+#about .tools{
+     margin-top: 1rem;
+}
+
+#about .tools ul{
+     display: grid;
+     grid-template-columns: 2fr 2fr;
+     /* list-style: none; */
+}
+
+#about .tools li{
+     margin-left: 1rem;
+}
+
 #projects .section-title{
      margin-bottom: 1.5em;
 }
