@@ -71,6 +71,8 @@ section {
 }
 
 #home {
+     background: url("../img/mm.jpg") no-repeat center;
+     background-size: cover;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -125,7 +127,7 @@ section {
 }
 
 .tabs {
-     background: #0b152b;
+     background: #3867d6;
      display: flex;
      align-items: center;
      justify-content: space-evenly;
@@ -141,7 +143,12 @@ section {
      flex-direction: column;
      color: var(--primary-color);
      text-decoration: none;
-     font-weight: 500;
+}
+
+.tabs a svg{
+     width: 1.5rem;
+     stroke: #ebf0fb;
+     stroke-width: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
