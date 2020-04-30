@@ -2,6 +2,7 @@
 
 :root {
      --primary-color: #3867d6;
+     --secondary-color: #26de81;
      --text-color: #ebf0fb;
 
      --shadow1: 0px 3px 9px #060a15;
@@ -88,8 +89,8 @@ section {
 }
 
 #home h1{
-     color: #afc2ef;
-     margin: 1rem 0 1rem;
+     color: var(--text-color);
+     margin: 1.5rem 0 2rem;
 }
 
 #projects article{
@@ -108,6 +109,7 @@ section {
 }
 
 #projects .name {
+     color: var(--secondary-color);
      margin-bottom: 0.5rem;
 }
 
@@ -145,8 +147,8 @@ section {
 
 #contact svg{
      width: 1.75rem;
-     stroke: #2d52ab;
-     fill: #2d52ab;
+     stroke: var(--secondary-color);
+     fill: var(--secondary-color);
      margin-right: 1.5rem;
      stroke-width: 2rem;
 }
