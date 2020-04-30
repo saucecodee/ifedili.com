@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 :root {
      --primary-color: #3867d6;
      --text-color: #ebf0fb;
@@ -16,7 +18,7 @@
      outline: none;
      color: var(--text-color);
      box-sizing: border-box;
-     font-family: -apple-system, "Helvetica Neue", sans-serif;
+     font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -70,6 +72,13 @@ section {
      margin: 0.5em 0;
 }
 
+.section-desc{
+     font-size: 0.87rem;
+     width: 90%;
+     margin: 0 auto;
+     text-align: center;
+}
+
 #home {
      background: url("../img/mm.jpg") no-repeat center;
      background-size: cover;
@@ -116,6 +125,30 @@ section {
 #projects .tools li {
      margin-right: 1rem;
      color: #afc2ef;
+}
+
+#contact .btn-group {
+     margin-top: 3rem;
+}
+
+#contact .btn-group a{
+     display: flex;
+     align-items: center;
+     background: hsl(225, 100%, 8%);
+     height: 50px;
+     width: 100%;
+     border-radius: 0.5rem;
+     margin-bottom: 1.5rem;
+     padding:  0 1rem;
+     text-decoration: none;
+}
+
+#contact svg{
+     width: 1.75rem;
+     stroke: #2d52ab;
+     fill: #2d52ab;
+     margin-right: 1.5rem;
+     stroke-width: 2rem;
 }
 
 .tabs-container {
