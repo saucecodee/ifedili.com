@@ -93,6 +93,10 @@ section {
      margin: 1.5rem 0 2rem;
 }
 
+#projects .section-title{
+     margin-bottom: 1.5em;
+}
+
 #projects article{
      margin-bottom: 5rem;
 }
@@ -109,7 +113,7 @@ section {
 }
 
 #projects .name {
-     color: var(--secondary-color);
+     /* color: var(--secondary-color); */
      margin-bottom: 0.5rem;
 }
 
@@ -127,6 +131,31 @@ section {
 #projects .tools li {
      margin-right: 1rem;
      color: #afc2ef;
+}
+
+#projects .links{
+     display: flex;
+     margin-top: 1rem;
+}
+
+#projects .links a{
+     background: #082c1a;
+     color: var(--secondary-color);
+     display: flex;
+     align-items: center;
+     width: max-content;
+     font-size: 0.87rem;
+     margin-right: 1rem;
+     padding: 0.25rem 0.5rem;
+     border-radius: 0.25rem;
+     text-decoration: none;
+}
+
+#projects .links svg {
+     width: 1.25rem;
+     stroke: var(--secondary-color);
+     margin-left: 0.5rem;
+     stroke-width: 2rem;
 }
 
 #contact .btn-group {
