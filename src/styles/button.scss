@@ -1,0 +1,98 @@
+.but {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: max-content;
+  padding: 0 24px;
+  border-radius: 0.5rem;
+  font-family: var(--font-1);
+  font-size: 18px;
+  font-weight: bold;
+  overflow: hidden;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.but.but-border {
+  border: 1px solid #3867d6;
+}
+
+.but:hover::after {
+  width: 100%;
+}
+
+.but::after {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 40px;
+  top: 0px;
+  left: 0px;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: #ebf0fb;
+  z-index: 1;
+  transition: 0.3s ease-out;
+}
+
+.but::before {
+  content: "";
+  position: absolute;
+  height: 62px;
+  width: 40px;
+  top: -1px;
+  left: 0;
+  border-radius: 8px;
+  background: #ebf0fb;
+  z-index: 0;
+  animation: button-ripple 2s ease-out infinite;
+}
+
+@keyframes button-ripple {
+  45%,
+  90% {
+    width: 100%;
+    opacity: 0.1;
+    border-radius: 20%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.but span {
+  position: relative;
+  margin-right: 24px;
+  z-index: 2;
+}
+
+.but svg {
+  position: relative;
+  z-index: 2;
+}
+
+.but-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: max-content;
+  /* background: #ebf0fb; */
+}
+
+.but-1 .icon {
+  display: grid;
+  place-items: center;
+  height: 56px;
+  width: 56px;
+  background: #ebf0fb;
+  border-radius: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.but-1 span {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 1.5rem;
+}

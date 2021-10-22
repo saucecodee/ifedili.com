@@ -1,0 +1,54 @@
+p {
+  font-size: 1rem;
+  line-height: 2;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  font-family: var(--font-1);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 90px;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
+
+.hero-title::before {
+  position: absolute;
+  content: "Ifedili";
+  left: 0.25rem;
+  top: 0.25rem;
+  color: #ebf0fb;
+  -webkit-text-stroke: 1px #3867d6;
+  width: 100%;
+  z-index: -1;
+}
+
+.sub-title {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-1);
+  font-weight: bold;
+  font-size: 18px;
+  color: #000000;
+}
+
+.sub-title::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2px;
+  margin-right: 0.5rem;
+  background: #3867d6;
+}

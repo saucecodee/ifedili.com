@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Oxanium:wght@500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  font-family: var(--font-2);
+  font-size: 16px;
+  overflow: hidden;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.menu-btn .menu-text {
+  color: #3867d6;
+  font-family: var(--font-1);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: 0.3s ease-out;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.hamburger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 2.5rem;
+  /* height: 1.25rem; */
+  padding: 8px 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-btn:hover .menu-text {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.hamburger span {
+  width: 100%;
+  min-height: 4px;
+  background: black;
+  transition: 0s ease-in-out;
+  margin: 2px 0;
+}
+
+.hamburger span:nth-child(3) {
+  width: 1.5rem;
+  background: #3867d6;
+}
+
+.close .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 2px);
+}
+
+.close .hamburger span:nth-child(2) {
+  display: none;
+}
+
+.close .hamburger span:nth-child(3) {
+  transform: rotate(135deg) translate(-4px, 2px);
+  width: 100%;
+}

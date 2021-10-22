@@ -1,0 +1,83 @@
+ <a class="card" title="" target="_blank" rel="noopener" href="https://angular.io/tutorial"></a>
+
+ ===================================================
+
+ <input type="hidden" #selection>
+ 
+ ===================================================
+
+  <input type="hidden" #selection>
+
+  <div class="card-container">
+    <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+      <span>New Component</span>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+      <span>Angular Material</span>
+    </button>
+  </div>
+
+
+  <div class="terminal" [ngSwitch]="selection.value">
+    <pre *ngSwitchDefault>ng generate component xyz</pre>
+    <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
+  </div>
+
+ ===================================================
+
+   transition: all 0.2s ease-in-out;
+
+ ===================================================
+
+ .card-container .card:not(:last-child) {
+  margin-right: 0;
+}
+
+ ===================================================
+
+.card-container .card:not(.highlight-card) {
+  cursor: pointer;
+}
+
+ ===================================================
+
+.card-container .card:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.card-container .card:not(.highlight-card):hover .material-icons path {
+  fill: rgb(105, 103, 103);
+}
+
+ ===================================================
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+ ===================================================
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+ ===================================================
+
+
+
+
+
+
+ - check card container css
+ - check what role does
+ - check line height

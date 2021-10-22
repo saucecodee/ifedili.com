@@ -1,0 +1,41 @@
+.timeline {
+  list-style: none;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0.125rem 2rem 1rem;
+  background-image: linear-gradient(to top, #3867d6 50%, transparent 0%);
+  background-position: left;
+  background-size: 2px 8px;
+  background-repeat: repeat-y;
+}
+
+.timeline-item:last-child {
+  background: none;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  background: white;
+  border: 2px solid #3867d6;
+  border-radius: 2px;
+}
+
+.timeline-item h4 {
+  font-family: var(--font-1);
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.timeline p {
+  font-size: 0.875rem;
+}

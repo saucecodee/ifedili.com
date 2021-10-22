@@ -1,0 +1,18 @@
+.pattern-dot {
+  width: 120px;
+  height: 120px;
+  background-image: radial-gradient(#305fd4 1.5px, transparent 0);
+  background-size: 8px 8px;
+}
+
+.pattern-box {
+  width: 176px;
+  height: 176px;
+  left: 884px;
+  top: 260px;
+
+  background: #ebf0fb;
+  border: 1px solid #3867d6;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}
