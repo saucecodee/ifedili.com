@@ -8,28 +8,55 @@
 @import url("./tab.scss");
 @import url("./text.scss");
 
-header {
-  background: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 32px;
+* {
+  box-sizing: border-box;
+  color: var(--txt-drk-1);
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
   font-family: var(--font-1);
-  color: #3867d6;
-  text-align: center;
-  font-size: 24px;
-  z-index: 99;
+  box-sizing: border-box;
+  /* outline: 2px solid pink; */
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5rem;
-  align-items: center;
-  margin-top: 160px;
+html {
+  position: relative;
+  font-family: var(--font-2);
+  font-size: 16px;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-.grid-e {
-  display: grid;
-  place-items: center;
+.container {
+  max-width: 1376px;
+  margin: 0 auto;
 }
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+a,
+a:visited,
+a:hover {
+  color: var(--pri-color-1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--pri-color-1);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+section {
+  padding: 5rem 0;
+}
+

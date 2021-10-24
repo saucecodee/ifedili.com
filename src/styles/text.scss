@@ -30,7 +30,7 @@ p {
   left: 0.25rem;
   top: 0.25rem;
   color: #ebf0fb;
-  -webkit-text-stroke: 1px #3867d6;
+  -webkit-text-stroke: 1px var(--pri-color-1);
   width: 100%;
   z-index: -1;
 }
@@ -50,5 +50,5 @@ p {
   width: 2rem;
   height: 2px;
   margin-right: 0.5rem;
-  background: #3867d6;
+  background: var(--pri-color-1);
 }

@@ -5,7 +5,7 @@
 .timeline-item {
   position: relative;
   padding: 0.125rem 2rem 1rem;
-  background-image: linear-gradient(to top, #3867d6 50%, transparent 0%);
+  background-image: linear-gradient(to top, var(--pri-color-1) 50%, transparent 0%);
   background-position: left;
   background-size: 2px 8px;
   background-repeat: repeat-y;
@@ -24,7 +24,7 @@
   height: 0.5rem;
   width: 0.5rem;
   background: white;
-  border: 2px solid #3867d6;
+  border: 2px solid var(--pri-color-1);
   border-radius: 2px;
 }
 

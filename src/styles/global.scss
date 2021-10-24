@@ -1,29 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Oxanium:wght@500;600;700&display=swap");
+/* -------------------------------------------------------------------------- */
+/* Header                                                                     */
+/* -------------------------------------------------------------------------- */
 
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
+header {
+  font-family: var(--font-1);
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1rem 0;
   box-sizing: border-box;
+  font-size: 18px;
+  z-index: 99;
+  box-shadow: 0px 40px 50px rgba(255, 255, 255, 1);
 }
 
-html {
-  position: relative;
-  font-family: var(--font-2);
-  font-size: 16px;
-  overflow: hidden;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
 }
 
-a,
-a:visited,
-a:hover {
-  color: #1976d2;
+header nav {
+  display: flex;
+}
+
+header nav a {
+  margin: 0 1rem;
   text-decoration: none;
-}
-
-a:hover {
-  color: #125699;
 }
 
 .menu-btn {
@@ -33,7 +39,7 @@ a:hover {
 }
 
 .menu-btn .menu-text {
-  color: #3867d6;
+  color: var(--pri-color-1);
   font-family: var(--font-1);
   font-weight: bold;
   font-size: 1.5rem;
@@ -49,7 +55,6 @@ a:hover {
   flex-direction: column;
   align-items: flex-end;
   width: 2.5rem;
-  /* height: 1.25rem; */
   padding: 8px 0;
   cursor: pointer;
   z-index: 1;
@@ -70,7 +75,7 @@ a:hover {
 
 .hamburger span:nth-child(3) {
   width: 1.5rem;
-  background: #3867d6;
+  background: var(--pri-color-1);
 }
 
 .close .hamburger span:nth-child(1) {
@@ -84,4 +89,33 @@ a:hover {
 .close .hamburger span:nth-child(3) {
   transform: rotate(135deg) translate(-4px, 2px);
   width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Scroll bar                                                                */
+/* -------------------------------------------------------------------------- */
+
+/* width */
+::-webkit-scrollbar {
+  /* display: none; */
+  width: 5px;
+  height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f3f3f3;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ced4e1;
+  border-radius: 10px;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9acced;
 }

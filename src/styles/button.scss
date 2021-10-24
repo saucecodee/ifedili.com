@@ -1,4 +1,19 @@
 .but {
+  display: flex;
+  background-color: var(--color-2);
+  background-image: linear-gradient(45deg, #034732, #69995d);
+  color: #ffffff;
+  place-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+
   position: relative;
   display: flex;
   align-items: center;
@@ -16,7 +31,7 @@
 }
 
 .but.but-border {
-  border: 1px solid #3867d6;
+  border: 1px solid var(--pri-color-1);
 }
 
 .but:hover::after {
