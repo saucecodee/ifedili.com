@@ -1,0 +1,29 @@
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  /*grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));*/
+  grid-gap: 4rem;
+}
+
+.card{
+box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+border-radius: 0.5rem;
+overflow: hidden;
+}
+
+.card-body{
+  background: rgb(230, 230, 230);
+  height: 500px;
+}
+
+.card-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.project-title{
+  font-family: var(--font-1);
+  font-size: 2rem;
+}
