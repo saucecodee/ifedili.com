@@ -2,6 +2,7 @@
 @import url("./global.scss");
 
 @import url("./button.scss");
+@import url("./card.scss");
 @import url("./decoration.scss");
 @import url("./list.scss");
 @import url("./menu.scss");
@@ -15,7 +16,7 @@
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: var(--font-1);
+  font-family: var(--font-2);
   box-sizing: border-box;
   /* outline: 2px solid pink; */
 }
@@ -24,13 +25,13 @@ html {
   position: relative;
   font-family: var(--font-2);
   font-size: 16px;
-  overflow: hidden;
   scroll-behavior: smooth;
 }
 
 .container {
-  max-width: 1376px;
+  max-width: 1392px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
   min-height: 100vh;
+  padding-top: 7rem;
 }
 
 a,
@@ -60,3 +62,31 @@ section {
   padding: 5rem 0;
 }
 
+/* -------------------------------------------------------------------------- */
+/* Scroll bar                                                                */
+/* -------------------------------------------------------------------------- */
+
+/* width */
+::-webkit-scrollbar {
+  /* display: none; */
+  width: 5px;
+  height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f3f3f3;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ced4e1;
+  border-radius: 10px;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9acced;
+}

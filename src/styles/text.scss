@@ -13,13 +13,14 @@ p {
   align-items: center;
 }
 
-.title {
+.section-title {
   position: relative;
   font-family: var(--font-1);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 72px;
-  line-height: 90px;
+  line-height: 100%;
+  margin-bottom: 6rem;
   color: transparent;
   -webkit-text-stroke: 2px black;
 }
