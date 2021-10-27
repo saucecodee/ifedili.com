@@ -1,0 +1,19 @@
+#menu-container {
+  background-color: var(--pri-color-1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+}
+
+#menu-container .container{
+  display: flex;
+}
+
+.menu-left{
+  display: flex;
+  flex-direction: column;
+
+}

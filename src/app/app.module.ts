@@ -11,6 +11,8 @@ import { ComponentComponent } from './pages/component/component.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProjectDetailComponent } from './pages/project-detail/project-detail.component';
 import { SharedModule } from './shared/shared.module';
+import { LoaderComponent } from './pages/loader/loader.component';
+import { MenuComponent } from './pages/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SharedModule } from './shared/shared.module';
     AboutComponent,
     ComponentComponent,
     ProjectsComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    LoaderComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
