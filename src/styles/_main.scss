@@ -8,6 +8,7 @@
 @import url("./menu.scss");
 @import url("./tab.scss");
 @import url("./text.scss");
+@import url("./preloader.scss");
 
 * {
   box-sizing: border-box;
@@ -51,6 +52,10 @@ a:hover {
 
 a:hover {
   color: var(--pri-color-1);
+}
+
+p{
+  font-size: 1.25rem;
 }
 
 ul,
