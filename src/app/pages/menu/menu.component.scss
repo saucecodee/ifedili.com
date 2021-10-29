@@ -1,4 +1,6 @@
 #menu-container {
+  display: flex;
+  place-items: center;
   background-color: var(--pri-color-1);
   position: fixed;
   left: 0;
@@ -6,14 +8,16 @@
   z-index: 50;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
-#menu-container .container{
-  display: flex;
+#menu-container .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
 }
 
-.menu-left{
+.menu-left {
   display: flex;
   flex-direction: column;
-
 }

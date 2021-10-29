@@ -1,22 +1,13 @@
-<div class="container">
-  weonewr
-  <div class="menu-btn close">
-    <span class="menu-text">CLOSE</span>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-</div>
-
-<div id="menu-container">
+<div id="menu-container" *ngIf="isMenuOpen">
   <div class="container">
     <div class="menu-left">
-      <a class="link-outline nav-link" routerLink="/">HOME</a>
-      <a class="link-outline nav-link" routerLink="/projects">PROJECTS</a>
-      <a class="link-outline nav-link" routerLink="/about">ABOUT</a>
-      <a class="link-outline nav-link" routerLink="/contact">CONTACT</a>
+      <a class="link-outline nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">HOME</a>
+      <a class="link-outline nav-link" routerLinkActive="active" routerLink="/projects">PROJECTS</a>
+      <a class="link-outline nav-link" routerLinkActive="active" routerLink="/about">ABOUT</a>
+      <a class="link-outline nav-link" routerLinkActive="active" routerLink="/contact">CONTACT</a>
+    </div>
+    <div class="menu-rigth">
+      Hello
     </div>
   </div>
 </div>

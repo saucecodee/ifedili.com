@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService } from 'src/app/core/services/navigation.service';
 
 @Component({
   selector: 'app-menu',
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  isMenuOpen: boolean = false
 
-  constructor() { }
+  constructor(
+    private navService: NavigationService
+  ) {
+    this.navService.menuStatus.subscribe(result => this.isMenuOpen = result);
+  }
 
   ngOnInit(): void {
   }

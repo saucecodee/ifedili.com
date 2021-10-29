@@ -1,12 +1,29 @@
-<header>
-  <div class="container header">
-    <span class="logo">
+<header *ngIf="!isMenuOpen">
+  <div class="container">
+    <span class="logo" routerLink="/">
       <img src="./../../../../assets/ifedili-logo.svg" alt="">
     </span>
 
     <div class="menu-btn">
       <span class="menu-text">MENU</span>
-      <div class="hamburger" onclick="showMenu()">
+      <div class="hamburger" (click)="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<header class="menu-header" *ngIf="isMenuOpen">
+  <div class="container">
+    <span class="logo">
+      <img src="./../../../../assets/ifedili-logo.svg" alt="">
+    </span>
+
+    <div class="menu-btn close">
+      <span class="menu-text">CLOSE</span>
+      <div class="hamburger" (click)="closeMenu()">
         <span></span>
         <span></span>
         <span></span>
