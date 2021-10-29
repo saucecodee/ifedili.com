@@ -1,5 +1,9 @@
-p {
-  font-size: 1rem;
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 1.25rem;
   line-height: 2;
   margin: 0;
 }
@@ -21,8 +25,8 @@ p {
   font-size: 72px;
   line-height: 100%;
   margin-bottom: 6rem;
-  color: transparent;
-  -webkit-text-stroke: 2px black;
+  color: var(--pri-color-1);
+  -webkit-text-stroke: 3px black;
 }
 
 .hero-title::before {
@@ -62,7 +66,7 @@ p {
   line-height: 100%;
   margin-right: 1rem;
   letter-spacing: 1px;
-  color: transparent;
+  color: white;
   -webkit-text-stroke: 1px var(--pri-color-1);
 }
 
@@ -70,6 +74,7 @@ p {
   font-size: 5rem;
   letter-spacing: 4px;
   margin-top: 1rem;
+  color: transparent;
   -webkit-text-stroke: 2px white;
   cursor: pointer;
 }
