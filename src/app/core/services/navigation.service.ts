@@ -31,7 +31,7 @@ export class NavigationService {
 
   private closeMenuOnNavigation() {
     this.router.events.subscribe((val) => {
-      if (val instanceof NavigationStart) {
+      if (val instanceof NavigationEnd) {
         this.closeMenu()
       }
     });
