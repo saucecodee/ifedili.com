@@ -3,8 +3,9 @@ a{
 }
 
 p{
-  font-size: 1.25rem;
-  line-height: 2;
+  color: #333333;
+  font-size: 1.125rem;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -22,11 +23,22 @@ p{
   font-family: var(--font-1);
   font-style: normal;
   font-weight: 800;
-  font-size: 72px;
+  font-size: 6rem;
+  letter-spacing: 0px;
   line-height: 100%;
   margin-bottom: 6rem;
-  color: var(--pri-color-1);
-  -webkit-text-stroke: 3px black;
+  color: white;
+  -webkit-text-stroke: 0.25rem var(--txt-drk-1);
+}
+
+.sub-section-title {
+  position: relative;
+  font-family: var(--font-1);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.0rem;
+  line-height: 100%;
+  margin-bottom: 2rem;
 }
 
 .hero-title::before {
@@ -75,7 +87,7 @@ p{
   letter-spacing: 4px;
   margin-top: 1rem;
   color: transparent;
-  -webkit-text-stroke: 2px white;
+  -webkit-text-stroke: 0.25rem white;
   cursor: pointer;
 }
 

@@ -73,7 +73,7 @@ header .container {
 .hamburger span {
   width: 100%;
   min-height: 4px;
-  background: black;
+  background: var(--txt-drk-1);
   transition: 0s ease-in-out;
   margin: 2px 0;
   border-radius: 0.125rem;
