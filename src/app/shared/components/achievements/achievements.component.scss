@@ -6,7 +6,7 @@
 }
 
 .card {
-  background: white;
+  background: var(--color-lgt-1);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
   overflow: hidden;
@@ -18,7 +18,7 @@
 }
 
 .card-footer {
-  background-color: white;
+  background-color: var(--color-lgt-1);
   display: flex;
   align-items: center;
   justify-content: space-between;

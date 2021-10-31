@@ -12,7 +12,7 @@
 
 .tab {
   color: var(--pri-color-1);
-  background: white;
+  background: var(--color-lgt-1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +26,6 @@
 }
 
 .tab.active {
-  color: white;
+  color: var(--color-lgt-1);
   background: var(--pri-color-1);
 }

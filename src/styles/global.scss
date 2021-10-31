@@ -51,7 +51,7 @@ header .container {
 }
 
 .menu-header .menu-btn .menu-text {
-  color: white;
+  color: var(--color-lgt-1);
 }
 
 .hamburger {
@@ -73,7 +73,7 @@ header .container {
 .hamburger span {
   width: 100%;
   min-height: 4px;
-  background: var(--txt-drk-1);
+  background: var(--color-drk-1);
   transition: 0s ease-in-out;
   margin: 2px 0;
   border-radius: 0.125rem;
@@ -86,7 +86,7 @@ header .container {
 
 .close .hamburger span:nth-child(1) {
   transform: rotate(45deg) translate(4px, 2px);
-  background: white;
+  background: var(--color-lgt-1);
 }
 
 .close .hamburger span:nth-child(2) {
@@ -96,5 +96,5 @@ header .container {
 .close .hamburger span:nth-child(3) {
   transform: rotate(135deg) translate(-4px, 2px);
   width: 100%;
-  background: white;
+  background: var(--color-lgt-1);
 }

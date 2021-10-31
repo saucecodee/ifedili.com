@@ -24,7 +24,7 @@
   display: inline-block;
   height: 0.5rem;
   width: 0.5rem;
-  background: white;
+  background: var(--color-lgt-1);
   border: 2px solid var(--pri-color-1);
   border-radius: 2px;
 }
@@ -34,14 +34,14 @@
   font-weight: bold;
   font-size: 1.125rem;
   line-height: 1.5;
-  color: var(--txt-drk-1);
+  color: var(--color-drk-1);
 } 
 
 .timeline-item h4 {
   font-family: var(--font-1);
   font-weight: normal;
   font-size: 1rem;
-  color: var(--txt-drk-1);
+  color: var(--color-drk-1);
   margin-bottom: 0.5rem;
 }
 
