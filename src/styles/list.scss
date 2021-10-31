@@ -1,10 +1,11 @@
 .timeline {
   list-style: none;
+  max-width: 800px;
 }
 
 .timeline-item {
   position: relative;
-  padding: 0.125rem 2rem 1rem;
+  padding: 0rem 2rem 2rem;
   background-image: linear-gradient(to top, var(--pri-color-1) 50%, transparent 0%);
   background-position: left;
   background-size: 2px 8px;
@@ -28,14 +29,26 @@
   border-radius: 2px;
 }
 
-.timeline-item h4 {
+.timeline-item h3 {
   font-family: var(--font-1);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: black;
+} 
+
+.timeline-item h4 {
+  font-family: var(--font-1);
+  font-weight: normal;
+  font-size: 1rem;
   color: black;
   margin-bottom: 0.5rem;
 }
 
-.timeline p {
+.timeline .time-span {
   font-size: 0.875rem;
+}
+
+.timeline p {
+  font-size: 1rem;
 }
