@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FeaturedProjectComponent } from './components/featured-project/featured-project.component';
+import { AchievementsComponent } from './components/achievements/achievements.component';
 
 
 
@@ -10,7 +11,8 @@ import { FeaturedProjectComponent } from './components/featured-project/featured
   declarations: [
     HeaderComponent,
     FooterComponent,
-    FeaturedProjectComponent
+    FeaturedProjectComponent,
+    AchievementsComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { FeaturedProjectComponent } from './components/featured-project/featured
   exports: [
     HeaderComponent,
     FooterComponent,
-    FeaturedProjectComponent
+    FeaturedProjectComponent,
+    AchievementsComponent
   ]
 })
 export class SharedModule { }
