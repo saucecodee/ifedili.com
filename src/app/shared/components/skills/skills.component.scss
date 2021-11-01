@@ -1,6 +1,6 @@
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 2rem;
 }
 
@@ -20,8 +20,8 @@
   width: 4rem;
 
   img{
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
   }
 }
 
@@ -29,5 +29,5 @@
   background-color: var(--color-lgt-1);
   display: flex;
   align-items: center;
-  padding-left: 2rem;
+  font-size: 1rem;
 }
