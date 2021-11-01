@@ -1,8 +1,8 @@
-a{
+a {
   text-decoration: none;
 }
 
-p{
+p {
   color: #333333;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -19,11 +19,13 @@ p{
 }
 
 .section-title {
+  display: flex;
+  align-items: center;
   position: relative;
   font-family: var(--font-1);
   font-style: normal;
   font-weight: 800;
-  font-size: 6rem;
+  font-size: 5rem;
   letter-spacing: 0px;
   line-height: 100%;
   margin-bottom: 6rem;
@@ -31,17 +33,24 @@ p{
   -webkit-text-stroke: 0.25rem var(--color-drk-1);
 }
 
-.sub-section-title {
-  position: relative;
+.section-title .fs-ind{
   font-family: var(--font-1);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.0rem;
+  font-weight: 100;
+  -webkit-text-stroke: 0;
+  color: #bebebe;
+}
+
+.sub-section-title {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-1);
+  font-weight: 800;
+  font-size: 2.5rem;
   line-height: 100%;
   margin-bottom: 2rem;
 }
 
-.hero-title{
+.hero-title {
   position: relative;
   font-family: var(--font-1);
   font-style: normal;
@@ -54,54 +63,61 @@ p{
   -webkit-text-stroke: 0.25rem var(--color-drk-1);
 }
 
-.hero-title::before {
-  position: absolute;
-  content: "Software Enginner";
-  left: 0.25rem;
-  top: 0.25rem;
-  color: #ebf0fb;
-  -webkit-text-stroke: 1px var(--pri-color-1);
-  width: 100%;
-  z-index: -1;
-}
-
-.sub-title {
-  display: flex;
-  align-items: center;
-  font-family: var(--font-1);
-  font-weight: bold;
-  font-size: 18px;
-  color: #000000;
-}
-
-.sub-title::before {
-  content: "";
+.sub-section-title::after {
+  content: "{";
   display: inline-block;
-  width: 2rem;
-  height: 2px;
-  margin-right: 0.5rem;
-  background: var(--pri-color-1);
+  height: 100%;
+  margin-left: 1rem;
+  color: #ececec;
+}
+
+.sec-close-bracket{
+  display: block;
+  font-family: var(--font-1);
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 100%;
+  color: #ececec;
+  margin-top: 1rem;
 }
 
 .link-outline {
   position: relative;
+  margin-right: 1rem;
   font-family: var(--font-1);
   font-weight: 800;
   font-size: 1.25rem;
-  line-height: 100%;
-  margin-right: 1rem;
   letter-spacing: 1px;
+  line-height: 100%;
+  cursor: pointer;
   color: var(--color-lgt-1);
-  -webkit-text-stroke: 1px var(--pri-color-1);
+  background-image: linear-gradient(var(--pri-color-1), var(--pri-color-1));
+  background-color: var(--color-lgt-1);
+  background-position: center bottom;
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
+  -webkit-text-stroke: 1.25px var(--pri-color-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s ease-in;
+}
+
+.link-outline.active {
+  background-size: 100% 100%;
+}
+
+.link-outline:hover {
+  background-size: 100% 100%;
 }
 
 .nav-link {
   font-size: 5rem;
   letter-spacing: 4px;
   margin-top: 1rem;
-  color: transparent;
+  color: var(--pri-color-1);
+  background-image: linear-gradient(var(--color-lgt-1), var(--color-lgt-1));
+  background-color: var(--pri-color-1);
   -webkit-text-stroke: 0.25rem var(--color-lgt-1);
-  cursor: pointer;
 }
 
 .nav-link.active,
