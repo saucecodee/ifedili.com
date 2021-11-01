@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FeaturedProjectComponent } from './components/featured-project/featured-project.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 
@@ -14,7 +15,8 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
     FooterComponent,
     FeaturedProjectComponent,
     AchievementsComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    SkillsComponent
   ],
   imports: [
     CommonModule
@@ -24,7 +26,8 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
     FooterComponent,
     FeaturedProjectComponent,
     AchievementsComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    SkillsComponent
   ]
 })
 export class SharedModule { }
