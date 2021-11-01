@@ -41,9 +41,22 @@ p{
   margin-bottom: 2rem;
 }
 
+.hero-title{
+  position: relative;
+  font-family: var(--font-1);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 6rem;
+  letter-spacing: 0px;
+  line-height: 100%;
+  color: var(--color-lgt-1);
+  color: transparent;
+  -webkit-text-stroke: 0.25rem var(--color-drk-1);
+}
+
 .hero-title::before {
   position: absolute;
-  content: "Ifedili";
+  content: "Software Enginner";
   left: 0.25rem;
   top: 0.25rem;
   color: #ebf0fb;

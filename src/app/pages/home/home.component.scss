@@ -1,0 +1,27 @@
+.hero .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-gap: 7rem;
+}
+
+.hero-left{
+  padding-top: 3rem;
+  max-width: 100%;
+}
+
+.greeting{
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: var(--font-1);
+}
+
+.sub-hero-title{
+  margin-top: 2rem;
+}
+
+.hero-right{
+  img{
+    opacity: 0.3;
+  }
+}
