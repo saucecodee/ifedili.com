@@ -1,0 +1,21 @@
+.bio {
+  display: grid;
+  grid-template-columns: minmax(300px, 3fr) minmax(300px, 3fr);
+  grid-column-gap: 10rem;
+}
+
+.bio .content-right img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.bio .content-left {
+  padding-top: 3rem;
+}
+
+
+.bio .content-left p {
+  margin-bottom: 1.5rem;
+}
