@@ -3,7 +3,7 @@ a {
 }
 
 p {
-  color: #333333;
+  color: var(--color-drk-1);
   font-size: 1.125rem;
   line-height: 1.5;
   margin: 0;
@@ -37,7 +37,7 @@ p {
   font-family: var(--font-1);
   font-weight: 100;
   -webkit-text-stroke: 0;
-  color: #bebebe;
+  color: var(--color-drk-4);
 }
 
 .sub-section-title {
@@ -68,7 +68,7 @@ p {
   display: inline-block;
   height: 100%;
   margin-left: 1rem;
-  color: #ececec;
+  color: var(--color-drk-5);
 }
 
 .sec-close-bracket{
@@ -77,7 +77,7 @@ p {
   font-weight: 800;
   font-size: 2.5rem;
   line-height: 100%;
-  color: #ececec;
+  color: var(--color-drk-5);
   margin-top: 1rem;
 }
 
