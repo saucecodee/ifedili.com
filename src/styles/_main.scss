@@ -101,3 +101,9 @@ section {
     padding: auto 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .container{
+    max-width: 640px;
+  }
+}

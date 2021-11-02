@@ -1,21 +1,21 @@
-.card-container{
+.card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 4rem;
 }
 
-.card{
-box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
-border-radius: 0.5rem;
-overflow: hidden;
+.card {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
-.card-body{
+.card-body {
   background: rgb(238, 238, 238);
   height: 400px;
 }
 
-.card-footer{
+.card-footer {
   background-color: var(--color-lgt-1);
   display: flex;
   align-items: center;
@@ -23,7 +23,13 @@ overflow: hidden;
   padding: 2rem;
 }
 
-.project-title{
+.project-title {
   font-family: var(--font-1);
   font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }

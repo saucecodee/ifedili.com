@@ -1,13 +1,13 @@
 .bio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-column-gap: 10rem;
 }
 
 .bio .content-right img {
   display: block;
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
   border-radius: 0.25rem;
 }
 
@@ -20,8 +20,18 @@
 }
 
 @media (max-width: 480px) {
-  .bio .content-left {
-    padding-bottom: 3rem;
-    padding-top: 0rem;
+  .bio {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 930px) {
+  .bio {
+    grid-column-gap: 5rem;
+
+    .content-left {
+      padding-bottom: 3rem;
+      padding-top: 0rem;
+    }
   }
 }

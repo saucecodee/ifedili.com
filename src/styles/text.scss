@@ -78,7 +78,7 @@ p {
   font-size: 2.5rem;
   line-height: 100%;
   color: var(--color-drk-5);
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .link-outline {
@@ -128,7 +128,11 @@ p {
 
 @media (max-width: 480px) {
   .section-title, .nav-link  {
-    font-size: 4rem;
+    font-size: 3.75rem;
     -webkit-text-stroke-width: 0.25rem;
+  }
+
+  .hero-title{
+    font-size: 4rem;
   }
 }

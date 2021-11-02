@@ -2,16 +2,16 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 7rem;
+  align-items: center;
 }
 
 .hero-left {
-  padding-top: 3rem;
   max-width: 100%;
 }
 
 .hero-right {
   img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -59,8 +59,18 @@
 }
 
 @media (max-width: 480px) {
+  .hero .container{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
   .greeting {
-    font-size: 1.75rem;
+    font-size: 1.625rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .hero .container {
+    grid-column-gap: 5rem;
   }
 
   .hero-right {
