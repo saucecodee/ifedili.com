@@ -1,12 +1,18 @@
 .hero .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 7rem;
 }
 
 .hero-left {
   padding-top: 3rem;
   max-width: 100%;
+}
+
+.hero-right {
+  img {
+    width: 100%;
+  }
 }
 
 .greeting {
@@ -16,31 +22,27 @@
   color: var(--color-drk-4);
   font-family: var(--font-1);
 
-  .peace{
+  .peace {
     display: inline-block;
     animation: wave 5s ease-in-out infinite;
   }
 
   @keyframes wave {
-    0%{
+    0% {
       transform: rotate(-25deg);
     }
-    5%{
+    5% {
       transform: rotate(30deg);
     }
-    10%{
+    10% {
       transform: rotate(-25deg);
     }
-    15%{
+    15% {
       transform: rotate(0deg);
     }
-    100%{
+    100% {
       transform: rotate(0deg);
     }
-  }
-
-  b {
-    font-size: 2rem;
   }
 }
 
@@ -53,5 +55,15 @@
     margin-top: -9rem;
     border-radius: 0.25rem;
     opacity: 0.8;
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting {
+    font-size: 1.75rem;
+  }
+
+  .hero-right {
+    margin-top: 5rem;
   }
 }

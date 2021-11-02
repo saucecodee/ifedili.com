@@ -4,26 +4,18 @@
 
 header {
   font-family: var(--font-1);
-  background: rgba(252, 252, 252, 0.9);
+  background: rgba(252, 252, 252, 0.97);
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   padding: 2rem 0 0;
-  box-sizing: border-box;
   z-index: 50;
-  box-shadow: 0px 30px 15px rgba(252, 252, 255, 0.9);
+  box-shadow: 0px 30px 15px rgba(252, 252, 255, 0.97);
 }
 
 header.menu-header {
   background: var(--pri-color-1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  padding: 2rem 0 0;
-  box-sizing: border-box;
-  z-index: 50;
   box-shadow: none;
 }
 
@@ -97,4 +89,12 @@ header .container {
   transform: rotate(135deg) translate(-4px, 2px);
   width: 100%;
   background: var(--color-lgt-1);
+}
+
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem 0 0;
+    box-shadow: 0px 10px 5px rgba(252, 252, 255, 0.97);
+  }
 }

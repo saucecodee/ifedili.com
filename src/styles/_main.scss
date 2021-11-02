@@ -30,7 +30,7 @@ html {
 }
 
 .container {
-  max-width: 1192px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -90,4 +90,14 @@ section {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 480px) {
+  html{
+    font-size: 14px;
+  }
+
+  .container{
+    padding: auto 1rem;
+  }
 }

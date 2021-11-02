@@ -6,3 +6,13 @@
   margin-top: 8rem;
   border-top: 2px solid var(--color-drk-5);
 }
+
+@media (max-width: 480px) {
+  .footer{
+    flex-direction: column;
+
+    .footer-socials{
+      margin-bottom: 3rem;
+    }
+  }
+}
