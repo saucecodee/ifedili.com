@@ -1,15 +1,13 @@
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
 }
 
 .card {
-  background: var(--color-lgt-1);
   display: flex;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
-  border-radius: 0.5rem;
   overflow: hidden;
+  padding: 0;
 }
 
 .card-icon {

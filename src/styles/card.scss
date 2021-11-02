@@ -1,3 +1,8 @@
-.card-container{
-  
+.card{
+  background: var(--bg-color-1);
+  border: 1px solid var(--color-drk-5);
+  border: 2px solid var(--color-lgt-1);
+  padding: 2rem;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
 }

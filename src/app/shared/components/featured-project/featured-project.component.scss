@@ -5,22 +5,42 @@
 }
 
 .card {
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
-  border-radius: 0.5rem;
-  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card:hover {
+  transition: 0.3s ease-out;
+  transform: translateY(-1rem) rotate(-1deg);
+}
+
+.card:hover > .card-footer::after{
+ width: 100%;
 }
 
 .card-body {
-  background: rgb(238, 238, 238);
+  background: var(--color-drk-5);
   height: 400px;
 }
 
 .card-footer {
+  position: relative;
   background-color: var(--color-lgt-1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+}
+
+.card-footer::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--pri-color-1);
+  transition: 0.3s ease-out;
 }
 
 .project-title {

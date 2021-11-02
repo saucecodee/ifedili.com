@@ -64,10 +64,10 @@ p {
 }
 
 .sub-section-title::after {
-  content: "{";
+  content: "() {";
   display: inline-block;
   height: 100%;
-  margin-left: 1rem;
+  margin-left: 0.125rem;
   color: var(--color-drk-5);
 }
 
