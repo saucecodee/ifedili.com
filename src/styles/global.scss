@@ -16,7 +16,10 @@ header {
 
 header.menu-header {
   background: var(--pri-color-1);
+  padding: 2rem 0;
   box-shadow: none;
+  opacity: 0;
+  animation: roll-up 0.3s ease-out 0.15s forwards;
 }
 
 header .container {
@@ -91,6 +94,17 @@ header .container {
   background: var(--color-lgt-1);
 }
 
+@keyframes roll-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    animation-fill-mode: forwards;
+  }
+}
 
 @media (max-width: 480px) {
   header {
