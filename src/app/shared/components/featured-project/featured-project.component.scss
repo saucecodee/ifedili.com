@@ -7,11 +7,11 @@
 .card {
   padding: 0;
   cursor: pointer;
+  transition: 0.3s ease-out;
 }
 
 .card:hover {
-  transition: 0.3s ease-out;
-  transform: translateY(-1rem) rotate(-1deg);
+  transform: translateY(-1.5rem) rotate(-1deg);
 }
 
 .card:hover > .card-footer::after{
@@ -25,7 +25,6 @@
 
 .card-footer {
   position: relative;
-  background-color: var(--color-lgt-1);
   display: flex;
   align-items: center;
   justify-content: space-between;

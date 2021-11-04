@@ -14,7 +14,7 @@ export class NavigationService {
   ) {
     this.menuStatusSubject = new BehaviorSubject<boolean>(false)
     this.menuStatus = this.menuStatusSubject.asObservable();
-    this.closeMenuOnNavigation()
+    // this.closeMenuOnNavigation()
   }
 
   public get isMenuOpen(): any {
@@ -29,11 +29,13 @@ export class NavigationService {
     this.menuStatusSubject.next(false);
   }
 
-  private closeMenuOnNavigation() {
-    this.router.events.subscribe((val) => {
-      if (val instanceof NavigationEnd) {
-        this.closeMenu()
-      }
-    });
-  }
+  // private closeMenuOnNavigation() {
+  //   this.router.events.subscribe((val) => {
+  //     if (val instanceof NavigationEnd) {
+  //       setTimeout(() => {
+  //         this.closeMenu()
+  //       }, 1000);
+  //     }
+  //   });
+  // }
 }
