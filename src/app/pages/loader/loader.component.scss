@@ -1,22 +1,98 @@
 #loader {
   background-color: var(--pri-color-1);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
-  animation: spin 2s ease-in-out;
+  animation: roll-in 3.5s ease-out;
 }
 
-@keyframes spin {
-  0% {
+.image-cont {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.logo-mask {
+  background: white;
+  max-height: 5rem;
+  max-width: 10rem;
+  overflow: hidden;
+  animation: logo-mask 1s ease-out 0.3s forwards;
+}
+
+.logo-mask:nth-child(2){
+  margin-top: -0.5px;
+}
+
+.upper {
+  transform: translateY(50%);
+  animation: upper-logo 2s ease-in-out 1.2s forwards;
+}
+.lower {
+  margin-top: -1px;
+  transform: translateY(-100%);
+  animation: lower-logo 2s ease-in-out 1.2s forwards;
+}
+
+
+
+@keyframes roll-in {
+  from {
+    transform: translateY(100%);
+  }
+  10%, 90% {
+    transform: translateY(0%);
+  }
+  to {
     opacity: 1;
+    transform: translateY(-100%);
   }
-  90% {
-    opacity: 0;
+}
+
+
+
+@keyframes logo-mask {
+  60%, from {
+    height: 5rem;
+    background: white;
   }
-  100% {
-    display: none;
+  99.9% {
+    height: 0;
+    background: white;
+  }
+  to {
+    height: 5rem;
+    background: var(--pri-color-1);
+  }
+}
+
+@keyframes upper-logo {
+  from {
+    transform: translateY(50%);
+  }
+  30%, 70% {
+    transform: translateY(0%);
+  }
+  to{
+    transform: translateY(50%);
+  }
+}
+
+@keyframes lower-logo {
+  from {
+    transform: translateY(-100%);
+  }
+  30%, 70% {
+    transform: translateY(-50%);
+  }
+  to{
+    transform: translateY(-100%);
   }
 }

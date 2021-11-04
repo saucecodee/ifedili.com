@@ -8,24 +8,27 @@ header {
   left: 0;
   width: 100vw;
   font-family: var(--font-1);
-  background: rgba(252, 252, 252, 0.7);
+  background: rgba(252, 252, 252, 0.5);
   backdrop-filter: blur(8px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   padding: 1rem 0;
-  border-bottom: 1px solid var(--color-lgt-1);
   z-index: 50;
+  transition: 0.01s ease-in-out;
 }
 
 header.menu-header {
   background: var(--pri-color-1);
-  opacity: 0;
-  animation: roll-up 0.3s ease-out 0.15s forwards;
+  border-bottom: none;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .menu-btn {
@@ -72,6 +75,7 @@ header .container {
   transition: 0s ease-in-out;
   margin: 2px 0;
   border-radius: 0.125rem;
+  transition: 0.3s ease-in-out;
 }
 
 .hamburger span:nth-child(3) {
@@ -79,16 +83,16 @@ header .container {
   background: var(--pri-color-1);
 }
 
-.close .hamburger span:nth-child(1) {
+.menu-header .hamburger span:nth-child(1) {
   transform: rotate(45deg) translate(4px, 2px);
   background: var(--color-lgt-1);
 }
 
-.close .hamburger span:nth-child(2) {
+.menu-header .hamburger span:nth-child(2) {
   display: none;
 }
 
-.close .hamburger span:nth-child(3) {
+.menu-header .hamburger span:nth-child(3) {
   transform: rotate(135deg) translate(-4px, 2px);
   width: 100%;
   background: var(--color-lgt-1);
@@ -102,7 +106,6 @@ header .container {
   100% {
     opacity: 1;
     transform: translateY(0%);
-    animation-fill-mode: forwards;
   }
 }
 

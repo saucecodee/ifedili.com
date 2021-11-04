@@ -12,7 +12,7 @@ export class MenuComponent implements OnInit {
   constructor(
     private navService: NavigationService
   ) {
-    this.navService.menuStatus.subscribe(result => this.isMenuOpen = result);
+    this.navService.menuStatus.subscribe(result => { this.isMenuOpen = result });
   }
 
   ngOnInit(): void {

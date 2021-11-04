@@ -1,5 +1,5 @@
-#menu-container {
-  display: flex;
+#menu {
+  display: none;
   place-items: center;
   background-color: var(--pri-color-1);
   position: fixed;
@@ -8,11 +8,18 @@
   z-index: 40;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  animation: roll-up 0.3s ease-out;
+  transition: 0.3s ease-out;
+  opacity: 0.5;
+  transform: translateY(-80%);
 }
 
-#menu-container .container {
+#menu.open {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+#menu .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
@@ -30,18 +37,29 @@
   width: auto;
   text-align: right;
   opacity: 0;
-  animation: roll-up 0.3s ease-out forwards;
+  animation: show-nav 0.3s ease-out both;
+}
+
+@keyframes show-nav {
+  from {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .nav-link:nth-child(1) {
   animation-delay: 0.3s;
 }
 .nav-link:nth-child(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.45s;
 }
 .nav-link:nth-child(3) {
-  animation-delay: 0.7s;
+  animation-delay: 0.6s;
 }
 .nav-link:nth-child(4) {
-  animation-delay: 0.9s;
+  animation-delay: 0.75s;
 }

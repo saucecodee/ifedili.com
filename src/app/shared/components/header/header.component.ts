@@ -18,11 +18,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openMenu() {
-    this.navService.openMenu()
-  }
-
-  closeMenu() {
-    this.navService.closeMenu()
+  toggleMenu() {
+    this.isMenuOpen ? this.navService.closeMenu() : this.navService.openMenu()
   }
 }
