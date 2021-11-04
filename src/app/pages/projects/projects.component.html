@@ -2,10 +2,11 @@
   <div class="container">
     <h2 class="section-title"><span class="fs-ind">~/</span>projects</h2>
     <div class="tabs">
-      <span class="tab active">Projects</span>
-      <span class="tab">Playground</span>
-      <span class="tab">Designs</span>
-      <span class="tab">Others</span>
+      <input type="hidden" value="projects" #tab1>
+      <span [ngClass]="{'active': tab1.value == 'projects'}" class="tab" (click)="tab1.value = 'projects'">Projects</span>
+      <span [ngClass]="{'active': tab1.value == 'playground'}" class="tab" (click)="tab1.value = 'playground'">Playground</span>
+      <span [ngClass]="{'active': tab1.value == 'designs'}" class="tab" (click)="tab1.value = 'designs'">Designs</span>
+      <span [ngClass]="{'active': tab1.value == 'others'}" class="tab" (click)="tab1.value = 'others'">Others</span>
     </div>
   </div>
 

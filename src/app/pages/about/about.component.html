@@ -25,13 +25,13 @@
   <section class="sub-section container">
     <h2 class="sub-section-title">Skills and Tools</h2>
     <div class="tabs">
-      <span class="tab active">All</span>
-      <span class="tab">Languages</span>
-      <span class="tab">Web</span>
-      <span class="tab">Mobile</span>
-      <span class="tab">Blockchain</span>
-      <span class="tab">Design</span>
-      <span class="tab">Others</span>
+      <input type="hidden" value="languages" #tab1>
+      <span [ngClass]="{'active': tab1.value == 'languages'}" class="tab" (click)="tab1.value = 'languages'">Languages</span>
+      <span [ngClass]="{'active': tab1.value == 'web'}" class="tab" (click)="tab1.value = 'web'">Web</span>
+      <span [ngClass]="{'active': tab1.value == 'mobile'}" class="tab" (click)="tab1.value = 'mobile'">Mobile</span>
+      <span [ngClass]="{'active': tab1.value == 'blockchain'}" class="tab" (click)="tab1.value = 'blockchain'">Blockchain</span>
+      <span [ngClass]="{'active': tab1.value == 'design'}" class="tab" (click)="tab1.value = 'design'">Design</span>
+      <span [ngClass]="{'active': tab1.value == 'others'}" class="tab" (click)="tab1.value = 'others'">Others</span>
     </div>
     <app-skills></app-skills>
     <span class="sec-close-bracket">}</span>
@@ -46,9 +46,9 @@
   <section class="sub-section container">
     <h2 class="sub-section-title">Achievements & Features</h2>
     <div class="tabs">
-      <span class="tab active">All</span>
-      <span class="tab">Awards</span>
-      <span class="tab">Talks</span>
+      <input type="hidden" value="awards" #tab2>
+      <span [ngClass]="{'active': tab2.value == 'awards'}" class="tab" (click)="tab2.value = 'awards'">Awards</span>
+      <span [ngClass]="{'active': tab2.value == 'talks'}" class="tab" (click)="tab2.value = 'talks'">Talks</span>
     </div>
     <app-achievements></app-achievements>
     <span class="sec-close-bracket">}</span>
