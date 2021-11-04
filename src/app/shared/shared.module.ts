@@ -6,7 +6,7 @@ import { FeaturedProjectComponent } from './components/featured-project/featured
 import { AchievementsComponent } from './components/achievements/achievements.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { SkillsComponent } from './components/skills/skills.component';
-
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -19,7 +19,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     SkillsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,
