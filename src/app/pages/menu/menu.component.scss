@@ -1,6 +1,7 @@
 #menu {
   display: none;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
   background-color: var(--pri-color-1);
   position: fixed;
   left: 0;
@@ -17,12 +18,13 @@
   display: flex;
   opacity: 1;
   transform: translateY(0%);
+  padding: 0;
 }
 
 #menu .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-left {
@@ -62,4 +64,7 @@
 }
 .nav-link:nth-child(4) {
   animation-delay: 0.75s;
+}
+
+@media (max-width: 480px) {
 }
