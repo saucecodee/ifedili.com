@@ -14,8 +14,8 @@
   transform: translateY(-1.5rem) rotate(-1deg);
 }
 
-.card:hover > .card-footer::after{
- width: 100%;
+.card:hover > .card-footer::after {
+  width: 100%;
 }
 
 .card-body {
@@ -31,7 +31,7 @@
   padding: 2rem;
 }
 
-.card-footer::after{
+.card-footer::after {
   content: "";
   position: absolute;
   top: 0;
@@ -50,5 +50,13 @@
 @media (max-width: 480px) {
   .card-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .card:hover {
+    transform: translateY(0) rotate(0);
+  }
+
+  .card:hover > .card-footer::after {
+    width: 0%;
   }
 }
