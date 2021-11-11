@@ -9,7 +9,20 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  animation: roll-in 3.5s ease-out;
+  animation: start-loader 3.5s ease-out;
+}
+
+@keyframes start-loader {
+  from {
+    transform: translateY(100%);
+  }
+  10%, 90% {
+    transform: translateY(0%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
 }
 
 .image-cont {
@@ -27,37 +40,6 @@
   animation: logo-mask 1s ease-out 0.3s forwards;
 }
 
-.logo-mask:nth-child(2){
-  margin-top: -0.5px;
-}
-
-.upper {
-  transform: translateY(50%);
-  animation: upper-logo 2s ease-in-out 1.2s forwards;
-}
-.lower {
-  margin-top: -1px;
-  transform: translateY(-100%);
-  animation: lower-logo 2s ease-in-out 1.2s forwards;
-}
-
-
-
-@keyframes roll-in {
-  from {
-    transform: translateY(100%);
-  }
-  10%, 90% {
-    transform: translateY(0%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-100%);
-  }
-}
-
-
-
 @keyframes logo-mask {
   60%, from {
     height: 5rem;
@@ -71,6 +53,20 @@
     height: 5rem;
     background: var(--pri-color-1);
   }
+}
+
+.logo-mask:nth-child(2){
+  margin-top: -0.5px;
+}
+
+.upper {
+  transform: translateY(50%);
+  animation: upper-logo 2s ease-in-out 1.2s forwards;
+}
+.lower {
+  margin-top: -1px;
+  transform: translateY(-100%);
+  animation: lower-logo 2s ease-in-out 1.2s forwards;
 }
 
 @keyframes upper-logo {

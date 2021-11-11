@@ -24,18 +24,19 @@
 
   .peace {
     display: inline-block;
-    animation: wave 5s ease-in-out infinite;
+    animation: wave 5s ease-in-out 3s infinite;
+    transform-origin: bottom;
   }
 
   @keyframes wave {
     0% {
-      transform: rotate(-25deg);
+      transform: rotate(-15deg);
     }
     5% {
       transform: rotate(30deg);
     }
     10% {
-      transform: rotate(-25deg);
+      transform: rotate(-15deg);
     }
     15% {
       transform: rotate(0deg);
