@@ -4,8 +4,9 @@
 
 type Category = "web" | "design"
 type Platform = "web" | "mobile" | "npm"
-type Role = "frontend" | "backend" | "UI/UX design"
-type features = "awards" | "talks"
+type Role = "frontend" | "backend" | "design"
+type FeatureType = "award" | "talk"
+
 
 interface Tool {
   img: string,
@@ -14,13 +15,18 @@ interface Tool {
 }
 
 interface Project {
-  img: [string],
   name: string,
+  img: [string],
   about: string,
   short_desc: string,
   platform: Platform,
   role: Role,
   category: [Category]
+  links: [{
+    name: string,
+    link: string,
+    icon: string
+  }]
 }
 
 interface Brand {
@@ -36,11 +42,16 @@ interface Experience {
   role: Role
 }
 
-interface Features {
-  type: string,
-  brand: string,
-  year: string,
-  link: string,
+interface Feature {
+  type: FeatureType,
+  title: string,
+  desc: string,
+  link?: string,
+}
+
+interface Testimonial {
+  text: string,
+  client: string,
 }
 
 
@@ -66,7 +77,12 @@ export const projects: [Project] = [
     short_desc: "string",
     platform: "web",
     role: "frontend",
-    category: ["web"]
+    category: ["web"],
+    links: [{
+      name: "GitHub",
+      link: "github.com",
+      icon: "github"
+    }]
   }
 ]
 
@@ -84,5 +100,21 @@ export const experience: [Experience] = [
     company: "Genesys",
     description: "string",
     role: "frontend"
+  }
+]
+
+export const features: [Feature] = [
+  {
+    type: "award",
+    title: "string",
+    desc: "string",
+    link: "string",
+  }
+]
+
+export const testimonial: [Testimonial] = [
+  {
+    text: "string",
+    client: "string",
   }
 ]
