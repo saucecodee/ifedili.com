@@ -1,4 +1,4 @@
-import { Experience } from "../models";
+import { IExperience } from "../models";
 
 export default [
   {
@@ -29,4 +29,4 @@ export default [
     description: "string",
     role: "Fullstack Engineer"
   }
-] as Experience[]
+] as IExperience[]

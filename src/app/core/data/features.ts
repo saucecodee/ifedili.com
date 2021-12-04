@@ -1,4 +1,4 @@
-import { Feature } from "../models";
+import { IFeature } from "../models";
 
 export default [
   {
@@ -7,4 +7,4 @@ export default [
     desc: "string",
     link: "string",
   }
-] as Feature[]
+] as IFeature[]

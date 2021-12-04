@@ -1,8 +1,8 @@
-import { Brand } from "../models";
+import { IBrand } from "../models";
 
 export default [
   {
     img: "string",
     name: "string"
   }
-] as Brand[]
+] as IBrand[]

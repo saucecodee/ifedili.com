@@ -1,4 +1,4 @@
-import { Project } from "../models"
+import { IProject } from "../models"
 
 export default [
   {
@@ -16,4 +16,4 @@ export default [
       icon: "github"
     }]
   }
-] as Project[]
+] as IProject[]

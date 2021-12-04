@@ -1,4 +1,4 @@
-import { Tool } from "../models"
+import { ITool } from "../models"
 
 export default [
   {
@@ -6,4 +6,4 @@ export default [
     name: "string",
     category: ["web"]
   }
-] as Tool[]
+] as ITool[]

@@ -4,13 +4,13 @@ export type Role = "Frontend" | "Backend" | "Design" | "Software Engineer" | "Ba
 export type FeatureType = "award" | "talk"
 
 
-export interface Tool {
+export interface ITool {
   img: string,
   name: string,
   category: [Category]
 }
 
-export interface Project {
+export interface IProject {
   name: string,
   img: [string],
   about: string,
@@ -26,12 +26,12 @@ export interface Project {
   }]
 }
 
-export interface Brand {
+export interface IBrand {
   img: string,
   name: string,
 }
 
-export interface Experience {
+export interface IExperience {
   from: string,
   to: string,
   company: string,
@@ -39,14 +39,14 @@ export interface Experience {
   role: Role
 }
 
-export interface Feature {
+export interface IFeature {
   type: FeatureType,
   title: string,
   desc: string,
   link?: string,
 }
 
-export interface Testimonial {
+export interface ITestimonial {
   text: string,
   client: string,
 }
