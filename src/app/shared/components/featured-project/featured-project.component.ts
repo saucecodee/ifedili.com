@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { projects } from 'src/app/core/data';
+import { Category, IProject } from 'src/app/core/models';
 
 @Component({
   selector: 'app-featured-project',
@@ -6,10 +8,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./featured-project.component.scss']
 })
 export class FeaturedProjectComponent implements OnInit {
-  list: any[] = [1,2,3,4]
-  constructor() { }
+  @Input() projects: { [id: string]: IProject } = projects
+  @Input() isFeatured: boolean | null = null
+  @Input() category: Category | null = null
 
-  ngOnInit(): void {
+  list: IProject[] = []
+
+  constructor() {
+    this.getProjects()
   }
 
+  ngOnInit(): void { }
+
+  getProjects() {
+    for (const key in this.projects) {
+      const project = this.projects[key]
+      let willDisplay = true
+
+      if (this.isFeatured == true && project.isFeatured != true) willDisplay = false
+      if (this.category != null && !project.categories.includes(this.category)) willDisplay = false
+
+      if (willDisplay) this.list.push(project)
+    }
+  }
 }

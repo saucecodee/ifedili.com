@@ -18,9 +18,12 @@
   width: 100%;
 }
 
-.card-body {
+.card-img {
   background: var(--color-drk-5);
+  display: block;
+  object-fit: cover;
   height: 400px;
+  max-width: 455px;
 }
 
 .card-footer {

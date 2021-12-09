@@ -1,12 +1,10 @@
 <div class="card-container">
-  <div [routerLink]="['/projects', 'Montero App']" class="card" *ngFor="let item of list">
-    <div class="card-body">
-
-    </div>
+  <div [routerLink]="['/projects', item.id]" class="card" *ngFor="let item of list">
+    <img src="./../../../../assets/{{item.images[0]}}" class="card-img">
     <div class="card-footer">
       <div class="left-card-footer">
-        <h2 class="project-title">Montero App</h2>
-        <p class="project-type">Banking and Finance</p>
+        <h2 class="project-title">{{item.name}}</h2>
+        <p class="project-type">{{item.platform}}</p>
       </div>
     </div>
   </div>
