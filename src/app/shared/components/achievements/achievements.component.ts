@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { features } from 'src/app/core/data';
+import { IFeature } from 'src/app/core/models';
 
 @Component({
   selector: 'app-achievements',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./achievements.component.scss']
 })
 export class AchievementsComponent implements OnInit {
-  list: any[] = [1, 2, 3, 4]
+  list: IFeature[] = features
 
   constructor() { }
 

@@ -2,10 +2,7 @@
   <div class="card" *ngFor="let item of list">
 
     <div class="card-body">
-      <p>
-        <b>HNG internship</b> - The email will be sent from an API end point and will use OAuth2 credentials to
-        send them, this is much better from a security point of view as some things should be.
-      </p>
+      <p><b>{{item.title}}</b> - {{item.desc}}</p>
     </div>
   </div>
 </div>
