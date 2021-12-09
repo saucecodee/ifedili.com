@@ -1,33 +1,36 @@
-export type Category = "web" | "design"
-export type Platform = "web" | "mobile" | "npm"
-export type Role = "Frontend" | "Backend" | "Design" | "Software Engineer" | "Backend Engineer"
-export type FeatureType = "award" | "talk"
+export type Category = "Web" | "Design"
+export type Platform = "Web" | "Mobile" | "NPM"
+export type FeatureType = "Award" | "Talk"
 
 
 export interface ITool {
-  img: string,
+  id: string,
+  image: string,
   name: string,
   category: [Category]
+}
+
+export interface ILink {
+  name: string,
+  link: string,
+  icon: string
 }
 
 export interface IProject {
+  id: string,
   name: string,
-  img: [string],
+  images: [string],
   about: string,
   short_desc: string,
   platform: Platform,
-  role: Role,
+  role: string,
   isFeatured: boolean,
-  category: [Category]
-  links: [{
-    name: string,
-    link: string,
-    icon: string
-  }]
+  categories: [Category]
+  links: [ILink]
 }
 
 export interface IBrand {
-  img: string,
+  image: string,
   name: string,
 }
 
@@ -36,7 +39,7 @@ export interface IExperience {
   to: string,
   company: string,
   description: string,
-  role: Role
+  role: string
 }
 
 export interface IFeature {

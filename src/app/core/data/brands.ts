@@ -2,7 +2,7 @@ import { IBrand } from "../models";
 
 export default [
   {
-    img: "string",
+    image: "string",
     name: "string"
   }
 ] as IBrand[]
