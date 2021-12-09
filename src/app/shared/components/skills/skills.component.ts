@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { tools } from 'src/app/core/data';
+import { ITool } from 'src/app/core/models';
 
 @Component({
   selector: 'app-skills',
@@ -6,11 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  list: any[] = [1, 2, 3, 4, 5, 6, 7, 8]
+  list: { [id: string]: ITool } = tools
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
