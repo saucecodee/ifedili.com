@@ -1,12 +1,10 @@
 <ul class="timeline">
   <li class="timeline-item" *ngFor="let item of list">
     <div class="card">
-      <span class="time-span">2019 - Present</span>
-      <h3>Software Enginner</h3>
-      <h4><span class="at">@</span> Genesys Tech Hub</h4>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book</p>
+      <span class="time-span">{{item.from}} - {{item.to}}</span>
+      <h3>{{item.role}}</h3>
+      <h4><span class="at">@</span> {{item.company}}</h4>
+      <p>{{item.description}}</p>
     </div>
   </li>
 </ul>
