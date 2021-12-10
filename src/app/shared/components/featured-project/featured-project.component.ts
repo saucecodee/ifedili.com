@@ -9,16 +9,16 @@ import { Category, IProject } from 'src/app/core/models';
 })
 export class FeaturedProjectComponent implements OnInit {
   @Input() projects: { [id: string]: IProject } = projects
-  @Input() isFeatured: boolean | null = null
+  @Input() isFeatured: boolean = false
   @Input() category: Category | null = null
 
   list: IProject[] = []
 
-  constructor() {
+  constructor() { }
+
+  ngOnInit(): void {
     this.getProjects()
   }
-
-  ngOnInit(): void { }
 
   getProjects() {
     for (const key in this.projects) {
