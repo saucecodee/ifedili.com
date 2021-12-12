@@ -3,13 +3,12 @@
     <div class="back-but" routerLink="/projects">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
         <path fill="none" d="M0 0h24v24H0z" />
-        <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z"
-          fill="var(--pri-color-1" />
+        <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z" fill="var(--pri-color-1" />
       </svg>
       Go back to Projects
     </div>
 
-    <h2 class="section-title">{{project_id}}</h2>
+    <h2 class="section-title">{{project.name}}</h2>
   </div>
 
   <section class="sub-section container">
@@ -20,25 +19,21 @@
   <section class="sub-section container">
     <h2 class="sub-section-title">About</h2>
     <div class="">
-      <p>After several years as Technical Director and Developer I craved to reconnect with craftsmanship, to make
-        beautiful objects carefully designed, carefully developed.</p>
-      <p>I started my career as an Art Director in Brazil and had the opportunity to work for the likes of Isobar
-        Brazil, DDB Brazil, R/GA Sydney and VML Sydney. I've designed products for The Iconic, Telstra, Air New
-        Zealand, Commonwealth Bank of Australia to name a few.</p>
+      <p *ngFor="let para of project.about">{{para}} <br><br></p>
     </div>
     <span class="sec-close-bracket">}</span>
   </section>
 
   <section class="sub-section container">
     <h2 class="sub-section-title">Technologies</h2>
-    <app-skills></app-skills>
+    <app-skills [skills]="project.tools"></app-skills>
     <span class="sec-close-bracket">}</span>
   </section>
 
   <section class="sub-section container">
     <h2 class="sub-section-title">Links</h2>
     <div class="button-container">
-      <button class="but">
+      <button class="but" *ngIf="project.links.git">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -47,7 +42,7 @@
         </svg>
         <span>GitHub</span>
       </button>
-      <button class="but">
+      <button class="but" *ngIf="project.links.web">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -56,7 +51,7 @@
         </svg>
         <span>Website</span>
       </button>
-      <button class="but">
+      <button class="but" *ngIf="project.links.and">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -65,7 +60,7 @@
         </svg>
         <span>Play store</span>
       </button>
-      <button class="but">
+      <button class="but" *ngIf="project.links.ios">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -74,7 +69,7 @@
         </svg>
         <span>App store</span>
       </button>
-      <button class="but">
+      <button class="but" *ngIf="project.links.npm">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0H24V24H0z" />
           <path
