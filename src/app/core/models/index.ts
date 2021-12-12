@@ -7,26 +7,25 @@ export interface ITool {
   id: string,
   image: string,
   name: string,
-  category: [Category]
+  categories: Category[]
 }
 
 export interface ILink {
-  name: string,
-  link: string,
-  icon: string
+  link: string
 }
 
 export interface IProject {
   id: string,
   name: string,
-  images: [string],
-  about: string,
+  images: string[],
+  about: string[],
   short_desc: string,
   platform: Platform,
   role: string,
   isFeatured: boolean,
-  categories: [Category]
-  links: [ILink]
+  categories: Category[]
+  links: { [id: string]: ILink },
+  tools: string[]
 }
 
 export interface IBrand {

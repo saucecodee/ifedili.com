@@ -5,42 +5,42 @@ export default {
     id: "ng",
     image: "./../../../../assets/skills/nodejs.png",
     name: "Angular",
-    category: ["Web"]
+    categories: ["Web"]
   },
   nod: {
     id: "nd",
     image: "./../../../../assets/skills/nodejs.png",
     name: "NodeJS",
-    category: ["Web"]
+    categories: ["Web"]
   },
   ion: {
     id: "ng",
     image: "./../../../../assets/skills/nodejs.png",
     name: "Ionic",
-    category: ["Web"]
+    categories: ["Web"]
   },
   tsc: {
     id: "ng",
     image: "./../../../../assets/skills/nodejs.png",
     name: "TypeScript",
-    category: ["Web"]
+    categories: ["Web"]
   },
   js: {
     id: "ng",
     image: "./../../../../assets/skills/nodejs.png",
     name: "JavaScript",
-    category: ["Web"]
+    categories: ["Web"]
   },
   sol: {
     id: "ng",
     image: "./../../../../assets/skills/nodejs.png",
     name: "Solidity",
-    category: ["Web"]
+    categories: ["Web"]
   },
   go: {
     id: "ng",
     image: "./../../../../assets/skills/nodejs.png",
     name: "Go",
-    category: ["Web"]
+    categories: ["Web"]
   },
 } as { [id: string]: ITool }
