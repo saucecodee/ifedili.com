@@ -11,7 +11,7 @@ export default {
     id: "nd",
     image: "./../../../../assets/skills/nodejs.png",
     name: "NodeJS",
-    categories: ["Web"]
+    categories: ["Web", "Languages"]
   },
   ion: {
     id: "ng",
@@ -41,6 +41,6 @@ export default {
     id: "ng",
     image: "./../../../../assets/skills/nodejs.png",
     name: "Go",
-    categories: ["Web"]
+    categories: ["Web", "Blockchain"]
   },
 } as { [id: string]: ITool }

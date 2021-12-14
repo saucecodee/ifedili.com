@@ -9,10 +9,10 @@ import { Category, IProject } from 'src/app/core/models';
   styleUrls: ['./featured-project.component.scss']
 })
 export class FeaturedProjectComponent implements OnInit {
-  @Input() projects: { [id: string]: IProject } = projects
   @Input() isFeatured: boolean = false
   @Input() categorySubject!: Subject<Category>;
 
+  projects: { [id: string]: IProject } = projects
   category!: Category
   list: IProject[] = []
 

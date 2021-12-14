@@ -1,12 +1,13 @@
 export type Category = "Web" | "Design" | "Playground" | "Others" | "Project"
 export type FeatureType = "Award" | "Talk"
+export type ToolType = "Languages" | "Design" | "Web" | "Others" | "Blockchain" | "Mobile"
 
 
 export interface ITool {
   id: string,
   image: string,
   name: string,
-  categories: Category[]
+  categories: ToolType[]
 }
 
 export interface ILink {
