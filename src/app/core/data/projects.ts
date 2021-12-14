@@ -34,7 +34,7 @@ export default {
     categories: ["Web", "Project"],
     isFeatured: true,
     links: {
-      git: { link: "github.com" },
+      git: { link: "git7hub.com" },
       web: { link: "github.com" },
     },
     tools: []

@@ -33,7 +33,7 @@
   <section class="sub-section container">
     <h2 class="sub-section-title">Links</h2>
     <div class="button-container">
-      <button class="but" *ngIf="project.links.git">
+      <a href="{{project.links.git.link}}" class="but" *ngIf="project.links.git">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -41,8 +41,8 @@
             fill="var(--pri-color-1" />
         </svg>
         <span>GitHub</span>
-      </button>
-      <button class="but" *ngIf="project.links.web">
+      </a>
+      <a href="{{project.links.web.link}}" class="but" *ngIf="project.links.web">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -50,8 +50,8 @@
             fill="var(--pri-color-1" />
         </svg>
         <span>Website</span>
-      </button>
-      <button class="but" *ngIf="project.links.and">
+      </a>
+      <a href="{{project.links.and.link}}" class="but" *ngIf="project.links.and">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -59,8 +59,8 @@
             fill="var(--pri-color-1" />
         </svg>
         <span>Play store</span>
-      </button>
-      <button class="but" *ngIf="project.links.ios">
+      </a>
+      <a href="{{project.links.ios.link}}" class="but" *ngIf="project.links.ios">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0h24v24H0z" />
           <path
@@ -68,8 +68,8 @@
             fill="var(--pri-color-1" />
         </svg>
         <span>App store</span>
-      </button>
-      <button class="but" *ngIf="project.links.npm">
+      </a>
+      <a href="{{project.links.npm.link}}" class="but" *ngIf="project.links.npm">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
           <path fill="none" d="M0 0H24V24H0z" />
           <path
@@ -77,7 +77,7 @@
             fill="var(--pri-color-1" />
         </svg>
         <span>NPM</span>
-      </button>
+      </a>
     </div>
     <span class="sec-close-bracket">}</span>
   </section>
