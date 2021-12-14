@@ -13,6 +13,7 @@ export class AppComponent {
   isLoading: boolean = false
   isMenuOpen: boolean = false
   isActiveBackground: boolean = true
+  showFooter: boolean = true
 
   constructor(
     public router: Router,
@@ -23,8 +24,10 @@ export class AppComponent {
     this.navService.backgroundStatus.subscribe(result => this.isActiveBackground = result);
 
     this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd)
+      if (event instanceof NavigationEnd) {
         gtag('config', 'G-85T7P5EYV8', { 'page_path': event.urlAfterRedirects });
+        if (event.urlAfterRedirects == "/contact") this.showFooter = false
+      }
     })
   }
 }
