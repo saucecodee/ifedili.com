@@ -1,5 +1,4 @@
-export type Category = "Web" | "Design"
-export type Platform = "Web" | "Mobile" | "NPM"
+export type Category = "Web" | "Design" | "Playground" | "Others" | "Project"
 export type FeatureType = "Award" | "Talk"
 
 
@@ -14,13 +13,18 @@ export interface ILink {
   link: string
 }
 
+export interface ICategory {
+  name: Category,
+  projects: string[],
+  desc: string
+}
 export interface IProject {
   id: string,
   name: string,
   images: string[],
   about: string[],
   short_desc: string,
-  platform: Platform,
+  platform: string,
   role: string,
   isFeatured: boolean,
   categories: Category[]

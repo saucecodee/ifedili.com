@@ -31,7 +31,7 @@ export default {
     short_desc: "This is just a dummy test app",
     platform: "Web",
     role: "Full-stack",
-    categories: ["Web"],
+    categories: ["Web", "Project"],
     isFeatured: true,
     links: {
       git: { link: "github.com" },

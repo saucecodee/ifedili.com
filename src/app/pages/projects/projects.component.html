@@ -2,21 +2,19 @@
   <div class="container">
     <h2 class="section-title"><span class="fs-ind">~/</span>projects</h2>
     <div class="tabs">
-      <input type="hidden" value="projects" #tab1>
-      <span [ngClass]="{'active': tab1.value == 'projects'}" class="tab" (click)="tab1.value = 'projects'">Projects</span>
-      <span [ngClass]="{'active': tab1.value == 'playground'}" class="tab" (click)="tab1.value = 'playground'">Playground</span>
-      <span [ngClass]="{'active': tab1.value == 'designs'}" class="tab" (click)="tab1.value = 'designs'">Designs</span>
-      <span [ngClass]="{'active': tab1.value == 'others'}" class="tab" (click)="tab1.value = 'others'">Others</span>
+      <span [ngClass]="{'active': category == 'Web'}" class="tab" (click)="switchTab('Web')">Web</span>
+      <span [ngClass]="{'active': category == 'Project'}" class="tab" (click)="switchTab('Project')">Project</span>
+      <span [ngClass]="{'active': category == 'Playground'}" class="tab"
+        (click)="switchTab('Playground')">Playground</span>
+      <span [ngClass]="{'active': category == 'Design'}" class="tab" (click)="switchTab('Design')">Designs</span>
+      <span [ngClass]="{'active': category == 'Others'}" class="tab" (click)="switchTab('Others')">Others</span>
     </div>
   </div>
 
-  <div class="container desc">
-    I love to explore and experiment on all things design, whether it be animation or motion
-    graphics and even 3d, this is the place it strives.
-  </div>
+  <div class="container desc"> {{ projectCategories[category.toLowerCase()].desc }}</div>
 
   <section class="sub-section container">
-    <app-featured-project></app-featured-project>
+    <app-featured-project [categorySubject]="categorySubject"></app-featured-project>
   </section>
 
 </section>
