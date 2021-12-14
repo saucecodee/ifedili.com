@@ -19,6 +19,18 @@
   margin-bottom: 1.5rem;
 }
 
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+
+  .but {
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .bio {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
