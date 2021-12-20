@@ -1,13 +1,15 @@
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 4rem;
+  justify-content: center;
 }
 
 .card {
   padding: 0;
   cursor: pointer;
   transition: 0.3s ease-out;
+  max-width: 500px;
 }
 
 .card:hover {
@@ -18,12 +20,24 @@
   width: 100%;
 }
 
+.img-container{
+  position: relative;
+  width: 100%;
+}
+
+.img-container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
 .card-img {
   background: var(--color-drk-5);
   display: block;
   object-fit: cover;
-  height: 400px;
-  max-width: 455px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .card-footer {
@@ -50,10 +64,13 @@
   font-size: 1.5rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 930px) {
   .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
+}
+
+@media (max-width: 480px) {
 
   .card:hover {
     transform: translateY(0) rotate(0);
