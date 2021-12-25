@@ -26,7 +26,7 @@ export class AppComponent {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         gtag('config', 'G-85T7P5EYV8', { 'page_path': event.urlAfterRedirects });
-        if (event.urlAfterRedirects == "/contact") this.showFooter = false
+        this.showFooter = event.urlAfterRedirects == "/contact" ? false : true
       }
     })
   }
