@@ -6,3 +6,9 @@ h1{
 .but{
   margin-top: 3rem;
 }
+
+@media (max-width: 480px) {
+  h1{
+    font-size: 4rem;
+  }
+}
