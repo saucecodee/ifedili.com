@@ -10,11 +10,15 @@ import { IProject } from 'src/app/core/models';
 })
 export class ProjectDetailComponent implements OnInit {
   id: string;
-  project: IProject
+  project!: IProject;
+  isValidProject: boolean = false
 
   constructor(private actRoute: ActivatedRoute) {
     this.id = this.actRoute.snapshot.params.project_id;
-    this.project =  projects[this.id]
+    if (projects[this.id]) {
+      this.project = projects[this.id]
+      this.isValidProject = true
+    }
   }
 
   ngOnInit(): void {
