@@ -13,7 +13,13 @@
 
   <div *ngIf="isValidProject">
     <section class="sub-section container">
-      <div>Carousel</div>
+      <div>
+        <swiper [navigation]="true" class="mySwiper">
+          <ng-template swiperSlide><img src="./../../../assets/projects/test/carousel.jpg" alt="" srcset=""></ng-template>
+          <ng-template swiperSlide><img src="./../../../assets/projects/test/carousel.jpg" alt="" srcset=""></ng-template>
+          <ng-template swiperSlide><img src="./../../../assets/projects/test/carousel.jpg" alt="" srcset=""></ng-template>
+        </swiper>
+      </div>
     </section>
 
 

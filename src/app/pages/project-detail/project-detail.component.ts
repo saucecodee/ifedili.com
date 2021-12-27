@@ -1,12 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
 import { ActivatedRoute } from '@angular/router';
 import { projects } from 'src/app/core/data';
 import { IProject } from 'src/app/core/models';
 
+// import Swiper core and required modules
+import SwiperCore, { Navigation } from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Navigation]);
+
 @Component({
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
-  styleUrls: ['./project-detail.component.scss']
+  styleUrls: ['./project-detail.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProjectDetailComponent implements OnInit {
   id: string;
