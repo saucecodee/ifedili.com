@@ -2,8 +2,6 @@ import { Component, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
 import { ActivatedRoute } from '@angular/router';
 import { projects } from 'src/app/core/data';
 import { IProject } from 'src/app/core/models';
-
-// import Swiper core and required modules
 import SwiperCore, { Navigation } from "swiper";
 
 // install Swiper modules
@@ -28,7 +26,6 @@ export class ProjectDetailComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }

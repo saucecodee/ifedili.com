@@ -1,45 +1,44 @@
-.sub-section{
+.sub-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 6rem;
 }
 
-
-.two-btn{
+.two-btn {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-column-gap: 1rem;
 }
 
-.but-container{
+.but-container {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
-.but{
+.but {
   margin-top: 1.5rem;
   padding: 1rem 1.5rem;
   height: 3.5rem;
   font-size: 1rem;
 }
 
-input{
+input {
   margin-bottom: 1rem;
 }
 
-.links{
+.links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 2.5rem;
   margin-top: 5rem;
 
-  a.link-outline{
+  a.link-outline {
     display: block;
     font-size: 1.5rem;
     margin-right: 0;
   }
 }
 
-.content-right p{
-color: var(--color-drk-2);
+.content-right p {
+  color: var(--color-drk-2);
 }
