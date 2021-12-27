@@ -23,6 +23,21 @@
   }
 }
 
+.detail-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 3rem;
+  color: var(--color-drk-4);
+  font-size: 1.125rem;
+
+  b{
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+}
+
 h1{
   font-size: 3rem;
   margin-bottom: 1rem;

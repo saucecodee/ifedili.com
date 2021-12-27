@@ -15,22 +15,26 @@
     <section class="sub-section container">
       <div>
         <swiper [navigation]="true" class="mySwiper">
-          <ng-template swiperSlide><img src="./../../../assets/projects/test/carousel.jpg" alt="" srcset=""></ng-template>
-          <ng-template swiperSlide><img src="./../../../assets/projects/test/carousel.jpg" alt="" srcset=""></ng-template>
-          <ng-template swiperSlide><img src="./../../../assets/projects/test/carousel.jpg" alt="" srcset=""></ng-template>
+          <ng-template swiperSlide><img src="./../../../assets/projects/test/carousel.jpg" alt="" srcset="">
+          </ng-template>
+          <ng-template swiperSlide><img src="./../../../assets/projects/test/carousel.jpg" alt="" srcset="">
+          </ng-template>
+          <ng-template swiperSlide><img src="./../../../assets/projects/test/carousel.jpg" alt="" srcset="">
+          </ng-template>
         </swiper>
+
+        <div class="detail-container">
+          <div class="card"><b>Role :</b> {{project.role}}</div>
+          <div class="card"><b>Platform :</b> {{project.platform}}</div>
+        </div>
       </div>
     </section>
 
 
     <section class="sub-section container">
       <h2 class="sub-section-title">About</h2>
-      <div class="">
-        <p *ngFor="let para of project.about">{{para}} <br><br></p>
-      </div>
-
-      <div class="">
-        Role |||||| Platform
+      <div>
+        <p *ngFor="let paragraph of project.about">{{paragraph}} <br><br></p>
       </div>
       <span class="sec-close-bracket">}</span>
     </section>
