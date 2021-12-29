@@ -12,7 +12,7 @@ export default {
     short_desc: "This is just a dummy test app",
     platform: "Web",
     role: "Full-stack",
-    categories: ["Web"],
+    categories: ["Project"],
     isFeatured: true,
     links: {
       git: { link: "github.com" },
@@ -32,7 +32,7 @@ export default {
     short_desc: "This is just a dummy test app",
     platform: "Web",
     role: "Full-stack",
-    categories: ["Web", "Project"],
+    categories: ["Playground", "Project"],
     isFeatured: true,
     links: {
       git: { link: "git7hub.com" },
@@ -52,7 +52,7 @@ export default {
     short_desc: "This is just a dummy test app",
     platform: "Web",
     role: "Full-stack",
-    categories: ["Web"],
+    categories: ["Project"],
     isFeatured: false,
     links: {
       git: { link: "github.com" },

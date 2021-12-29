@@ -9,21 +9,21 @@ export default {
   project: {
     name: "Project",
     projects: ["string"],
-    desc: "string"
+    desc: "These are some clients and personal projects that I've worked on and allowed to share"
   },
   playground: {
     name: "Web",
     projects: ["Playground"],
-    desc: "string"
+    desc: "When I try to learn new stuffs or just playaround with some tools, this is where they end up."
   },
   design: {
     name: "Design",
     projects: ["string"],
-    desc: "I love to explore and experiment on all things design, whether it be animation or motion graphics and even 3d, this is the place it strives"
+    desc: "During my spare time I love to explore and experiment on designs, this is the place it strives"
   },
   others: {
     name: "Others",
     projects: ["string"],
-    desc: "string"
+    desc: "Because i don't know where to group these projects, I'll just leave them here :)"
   },
  } as {[id: string]: ICategory}

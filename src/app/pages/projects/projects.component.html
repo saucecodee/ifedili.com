@@ -10,7 +10,9 @@
     </div>
   </div>
 
-  <div class="container desc"> {{ projectCategories[category.toLowerCase()].desc }}</div>
+  <div class="container">
+    <div class="desc">{{ projectCategories[category.toLowerCase()].desc }}</div>
+  </div>
 
   <section class="sub-section container">
     <app-featured-project [categorySubject]="categorySubject"></app-featured-project>
