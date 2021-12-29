@@ -57,6 +57,9 @@ export default {
     links: {
       git: { link: "github.com" },
       web: { link: "github.com" },
+      ios: { link: "github.com" },
+      and: { link: "github.com" },
+      npm: { link: "github.com" },
     },
     tools: [],
     year: 2020
