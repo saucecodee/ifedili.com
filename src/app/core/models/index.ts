@@ -44,7 +44,7 @@ export interface IExperience {
   to: string,
   company: string,
   description: string,
-  role: string
+  role: string,
 }
 
 export interface IFeature {
@@ -52,6 +52,7 @@ export interface IFeature {
   title: string,
   desc: string,
   link?: string,
+  year: number,
 }
 
 export interface ITestimonial {
