@@ -1,18 +1,22 @@
-p{
-  margin-bottom: 4rem;
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 4rem;
+}
+
+p {
+  margin-bottom: 5rem;
   max-width: 700px;
 }
 
 .links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 2.5rem;
-  margin-top: 5rem;
-  max-width: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 1.5rem;
+  height: 1rem;
+}
 
-  a.link-outline {
-    display: block;
-    font-size: 1.5rem;
-    margin-right: 0;
-  }
+.link-outline {
+  margin-right: 0;
 }
