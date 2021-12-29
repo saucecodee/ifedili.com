@@ -30,7 +30,8 @@ export interface IProject {
   isFeatured: boolean,
   categories: Category[]
   links: { [id: string]: ILink },
-  tools: string[]
+  tools: string[],
+  year: number
 }
 
 export interface IBrand {

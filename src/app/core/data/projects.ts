@@ -18,7 +18,8 @@ export default {
       git: { link: "github.com" },
       web: { link: "github.com" },
     },
-    tools: ["ang", "nod", "tsc"]
+    tools: ["ang", "nod", "tsc"],
+    year: 2020
   },
   "main-app": {
     id: "main-app",
@@ -37,7 +38,8 @@ export default {
       git: { link: "git7hub.com" },
       web: { link: "github.com" },
     },
-    tools: []
+    tools: [],
+    year: 2020
   },
   "dev-app": {
     id: "dev-app",
@@ -56,6 +58,7 @@ export default {
       git: { link: "github.com" },
       web: { link: "github.com" },
     },
-    tools: []
+    tools: [],
+    year: 2020
   },
 } as { [id: string]: IProject }
