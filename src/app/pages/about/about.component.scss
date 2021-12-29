@@ -1,18 +1,15 @@
 .bio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-column-gap: 10rem;
+  grid-gap: 5rem;
 }
 
 .bio .content-right img {
   display: block;
   object-fit: cover;
   max-width: 100%;
-  border-radius: 0.25rem;
-}
-
-.bio .content-left {
-  padding-top: 3rem;
+  border-radius: 0.5rem;
+  opacity: 0.5;
 }
 
 .bio .content-left p {
@@ -41,7 +38,7 @@
   .bio {
     grid-column-gap: 5rem;
 
-    .content-left {
+    .content-right {
       padding-bottom: 3rem;
       padding-top: 0rem;
     }

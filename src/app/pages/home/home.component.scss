@@ -10,7 +10,12 @@
 }
 
 .hero-right {
+  opacity: 0.6;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
   img {
+    display: block;
     max-width: 100%;
   }
 }
