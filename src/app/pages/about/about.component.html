@@ -68,7 +68,7 @@
     <h2 class="sub-section-title">Features</h2>
     <div class="tabs">
       <input type="hidden" value="awards" #tab2>
-      <span [ngClass]="{'active': featTab == 'Award'}" class="tab" (click)="switchFeatureTab('Award')">Awards</span>
+      <span [ngClass]="{'active': featTab == 'Award'}" class="tab" (click)="switchFeatureTab('Award')">Achievements</span>
       <span [ngClass]="{'active': featTab == 'Talk'}" class="tab" (click)="switchFeatureTab('Talk')">Talks</span>
     </div>
     <app-achievements [featuresSubject]="featuresSubject"></app-achievements>
