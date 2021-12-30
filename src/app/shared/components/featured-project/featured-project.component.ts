@@ -36,6 +36,7 @@ export class FeaturedProjectComponent implements OnInit {
       const project = this.projects[key]
       let willDisplay = true
 
+      if (!project.isVisible) willDisplay = false
       if (this.isFeatured == true && project.isFeatured != true) willDisplay = false
       if (category != null && !project.categories.includes(category)) willDisplay = false
 

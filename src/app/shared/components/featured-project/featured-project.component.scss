@@ -64,6 +64,12 @@
   font-size: 1.5rem;
 }
 
+.project-type {
+  font-family: var(--font-2);
+  font-size: 0.875rem;
+  color: var(--color-drk-3);
+}
+
 @media (max-width: 930px) {
   .card-container {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
