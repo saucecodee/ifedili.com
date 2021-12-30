@@ -10,8 +10,9 @@
       </div>
       <div class="content-left">
         <h2 class="sub-section-title">Hello world</h2>
-        <p>Hi, I’m Ifedili Onyegbu, Software Engineer currently based in Nigeria and I love what I do. With my 4+ years
-          as a professional Developer and unconventional Designer I craved to reconnect with craftsmanship, to make well designed and efficent systems.</p>
+        <p>Hi, I’m Ifedili Onyegbu, Software Engineer currently based in Nigeria and I love what I do. In all my years
+          as a Developer and Designer I've craved to reconnect with craftsmanship, to make well designed and efficent
+          systems.</p>
         <p>I started my career as a freelance designer where I built my fundermentals in the design space. Then I went
           on to do Frontend development with Angular and then Mobile development with Ionic framework. Rigth now I'm
           building Web2/3 applications with NodeJS and Solidity as a Backend and Smart Contract Engineer.</p>
@@ -20,7 +21,7 @@
         <p>I'm thrilled by design and logic; and I solve problems for fun. When I'm not working I'm either playing
           badminton 🏸, whipping my friends on FIFA 🎮, sharing memes 🤡, doing some art work 🎨 or working out at the
           gym 🏋🏽‍♂️.</p>
-        <p>Because I'm an Angular fan ❤️ this site was built with Angular and without any CSS/animation libraries. </p>
+        <p>Because I'm a huge Angular fan ❤️ this site was built with Angular and without any CSS/animation libraries. </p>
 
         <div class="button-container">
           <a class="but" title="My resume" target="_blank" rel="noopener"
@@ -47,9 +48,9 @@
       <span [ngClass]="{'active': toolTab == 'Languages'}" class="tab"
         (click)="switchToolTab('Languages')">Languages</span>
       <span [ngClass]="{'active': toolTab == 'Web'}" class="tab" (click)="switchToolTab('Web')">Web</span>
-      <span [ngClass]="{'active': toolTab == 'Mobile'}" class="tab" (click)="switchToolTab('Mobile')">Mobile</span>
+      <!-- <span [ngClass]="{'active': toolTab == 'Mobile'}" class="tab" (click)="switchToolTab('Mobile')">Mobile</span>
       <span [ngClass]="{'active': toolTab == 'Blockchain'}" class="tab"
-        (click)="switchToolTab('Blockchain')">Blockchain</span>
+        (click)="switchToolTab('Blockchain')">Blockchain</span> -->
       <span [ngClass]="{'active': toolTab == 'Design'}" class="tab" (click)="switchToolTab('Design')">Design</span>
       <span [ngClass]="{'active': toolTab == 'Others'}" class="tab" (click)="switchToolTab('Others')">Others</span>
     </div>
@@ -68,7 +69,8 @@
     <h2 class="sub-section-title">Features</h2>
     <div class="tabs">
       <input type="hidden" value="awards" #tab2>
-      <span [ngClass]="{'active': featTab == 'Award'}" class="tab" (click)="switchFeatureTab('Award')">Achievements</span>
+      <span [ngClass]="{'active': featTab == 'Award'}" class="tab"
+        (click)="switchFeatureTab('Award')">Achievements</span>
       <span [ngClass]="{'active': featTab == 'Talk'}" class="tab" (click)="switchFeatureTab('Talk')">Talks</span>
     </div>
     <app-achievements [featuresSubject]="featuresSubject"></app-achievements>
