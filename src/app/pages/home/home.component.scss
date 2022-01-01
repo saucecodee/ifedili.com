@@ -17,6 +17,8 @@
   img {
     display: block;
     max-width: 100%;
+    margin-top: -7rem;
+    border-radius: 0.25rem;
   }
 }
 
@@ -54,14 +56,6 @@
 
 .sub-hero-title {
   margin-top: 2rem;
-}
-
-.hero-right {
-  img {
-    margin-top: -7rem;
-    border-radius: 0.25rem;
-    opacity: 0.8;
-  }
 }
 
 .tag-line {
