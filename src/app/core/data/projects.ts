@@ -1,67 +1,173 @@
 import { IProject } from "../models"
 
 export default {
-  "test-app": {
-    id: "test-app",
-    images: ["projects/test/cover.jpg"],
-    name: "Test app",
-    about: [
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-      "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+  "bangajs": {
+    id: "bangajs",
+    cover_image: "projects/bangajs/cover.png",
+    images: [
+      "projects/bangajs/image-1.png",
+      "projects/bangajs/image-2.png",
     ],
-    short_desc: "This is just a dummy test app",
-    platform: "Web",
-    role: "Full-stack",
-    categories: ["Project"],
+    name: "BàngáJS",
+    about: [
+      "BàngáJS is a CLI generator for scaffolding ExpressJS applications and generating application layer files for speed and efficiency.",
+    ],
+    short_desc: "A CLI generator for scaffolding ExpressJS applications.",
+    platform: "NPM",
+    role: "Creator | Maintainer",
+    category: "Project",
     isFeatured: true,
     links: {
-      git: { link: "github.com" },
-      web: { link: "github.com" },
+      git: { link: "https://github.com/bangajs/banga-cli" },
+      npm: { link: "https://www.npmjs.com/package/bangajs" },
     },
-    tools: ["ang", "nod", "tsc"],
-    year: 2020
+    tools: ["js", "ejs"],
+    year: 2020,
+    isVisible: true
   },
-  "main-app": {
-    id: "main-app",
-    images: ["projects/test/cover.jpg"],
-    name: "Main app",
-    about: [
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-      "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+  "bangajs-docs": {
+    id: "bangajs-docs",
+    cover_image: "projects/bangadocs/cover.png",
+    images: [
+      "projects/bangadocs/image-1.png",
+      "projects/bangadocs/image-2.png",
     ],
-    short_desc: "This is just a dummy test app",
-    platform: "Web",
-    role: "Full-stack",
-    categories: ["Playground", "Project"],
-    isFeatured: true,
-    links: {
-      git: { link: "git7hub.com" },
-      web: { link: "github.com" },
-    },
-    tools: [],
-    year: 2020
-  },
-  "dev-app": {
-    id: "dev-app",
-    images: ["projects/test/cover.jpg"],
-    name: "Dev app",
+    name: "BàngáJS Docs",
     about: [
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-      "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "BàngáJS offical documentation.",
     ],
-    short_desc: "This is just a dummy test app",
+    short_desc: "BàngáJS documentation.",
     platform: "Web",
-    role: "Full-stack",
-    categories: ["Project"],
+    role: "Frontend",
+    category: "Project",
     isFeatured: false,
     links: {
-      git: { link: "github.com" },
-      web: { link: "github.com" },
-      ios: { link: "github.com" },
-      and: { link: "github.com" },
-      npm: { link: "github.com" },
+      git: { link: "https://github.com/bangajs/documentation" },
+      web: { link: "https://bangajs.com" },
     },
-    tools: [],
-    year: 2020
+    tools: ["ang", "ts", "html", "scss"],
+    year: 2020,
+    isVisible: true
+  },
+  "mygrade": {
+    id: "mygrade",
+    cover_image: "projects/mygrade/cover.png",
+    images: [
+      "projects/mygrade/image-1.png",
+      "projects/mygrade/image-2.png",
+      "projects/mygrade/image-3.png",
+    ],
+    name: "MyGrade",
+    about: [
+      "Grade management app for university students",
+    ],
+    short_desc: "Grade management app for university students",
+    platform: "Mobile app",
+    role: "Fullstack",
+    category: "Project",
+    isFeatured: true,
+    links: {
+      and: { link: "https://play.google.com/store/apps/details?id=com.mygrade.my" },
+    },
+    tools: ["ionic", "ts", "fbase"],
+    year: 2018,
+    isVisible: true
+  },
+  "portfolio-site": {
+    id: "portfolio-site",
+    cover_image: "projects/ifedili/cover.png",
+    images: [
+      "projects/ifedili/image-1.png",
+      "projects/ifedili/image-2.png",
+      "projects/ifedili/image-3.png",
+    ],
+    name: "Ifedili.com",
+    about: [
+      "My portfolio website",
+    ],
+    short_desc: "My portfolio website",
+    platform: "Web",
+    role: "Frontend",
+    category: "Project",
+    isFeatured: false,
+    links: {
+      git: { link: "https://github.com/saucecodee/ifedili.com" },
+      web: { link: "https://ifedili.com" },
+    },
+    tools: ["ang", "ts", "scss"],
+    year: 2021,
+    isVisible: true
+  },
+  "table-tennis-recorder": {
+    id: "table-tennis-recorder",
+    cover_image: "projects/generic/cover.png",
+    images: [
+      "projects/ping-pong/image-1.png",
+      "projects/ping-pong/image-2.png",
+      "projects/ping-pong/image-3.png",
+    ],
+    name: "PingPong",
+    about: [
+      "A web application for recording points of multiple players in a table tennis tournament.",
+    ],
+    short_desc: "A web app for recording table tenis mutiplayer tournament",
+    platform: "Web",
+    role: "Frontend",
+    category: "Playground",
+    isFeatured: false,
+    links: {
+      web: { link: "https://saucecodee.github.io/table-tennis-tournament" },
+      git: { link: "https://github.com/saucecodee/table-tennis-tournament" },
+    },
+    tools: ["js", "html", "css"],
+    year: 2019,
+    isVisible: true
+  },
+  "unit-converter": {
+    id: "unit-converter",
+    cover_image: "projects/generic/cover.png",
+    images: [
+      "projects/unit-converter/image-1.png",
+    ],
+    name: "Unit converter",
+    about: [
+      "",
+    ],
+    short_desc: "A web app for converting basic measuring units",
+    platform: "Web",
+    role: "Frontend",
+    category: "Playground",
+    isFeatured: false,
+    links: {
+      git: { link: "https://github.com/saucecodee/Unit-converter" },
+      web: { link: "https://saucecodee.github.io/Unit-converter" },
+    },
+    tools: ["js", "html", "css"],
+    year: 2019,
+    isVisible: true
+  },
+  "test": {
+    id: "test",
+    cover_image: "projects/generic/cover.png",
+    images: [],
+    name: "BàngáJS",
+    about: [
+      "",
+    ],
+    short_desc: "",
+    platform: "NPM",
+    role: "Maintainer",
+    category: "Project",
+    isFeatured: false,
+    links: {
+      git: { link: "link" },
+      npm: { link: "link" },
+      ios: { link: "link" },
+      and: { link: "link" },
+      web: { link: "link" },
+    },
+    tools: ["js"],
+    year: 2020,
+    isVisible: false
   },
 } as { [id: string]: IProject }
