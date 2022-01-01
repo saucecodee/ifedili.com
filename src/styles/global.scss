@@ -1,0 +1,114 @@
+/* -------------------------------------------------------------------------- */
+/* Header                                                                     */
+/* -------------------------------------------------------------------------- */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  font-family: var(--font-1);
+  background: rgba(252, 252, 252, 0.5);
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  padding: 1rem 0;
+  z-index: 50;
+  transition: 0.01s ease-in-out;
+}
+
+header.menu-header {
+  background: var(--pri-color-1);
+  border-bottom: none;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.menu-btn .menu-text {
+  color: var(--pri-color-1);
+  font-family: var(--font-1);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: 0.3s ease-out;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.menu-header .menu-btn .menu-text {
+  color: var(--color-lgt-1);
+}
+
+.hamburger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 2.5rem;
+  padding: 8px 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-btn:hover .menu-text {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.hamburger span {
+  width: 100%;
+  min-height: 4px;
+  background: var(--color-drk-1);
+  transition: 0s ease-in-out;
+  margin: 2px 0;
+  border-radius: 0.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(3) {
+  width: 1.5rem;
+  background: var(--pri-color-1);
+}
+
+.menu-header .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 2px);
+  background: var(--color-lgt-1);
+}
+
+.menu-header .hamburger span:nth-child(2) {
+  display: none;
+}
+
+.menu-header .hamburger span:nth-child(3) {
+  transform: rotate(135deg) translate(-4px, 2px);
+  width: 100%;
+  background: var(--color-lgt-1);
+}
+
+@keyframes roll-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 480px) {
+
+}

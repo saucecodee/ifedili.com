@@ -1,0 +1,117 @@
+@import url("./variable.scss");
+@import url("./global.scss");
+
+@import url("./button.scss");
+@import url("./card.scss");
+@import url("./decoration.scss");
+@import url("./list.scss");
+@import url("./menu.scss");
+@import url("./tab.scss");
+@import url("./text.scss");
+@import url("./preloader.scss");
+
+* {
+  box-sizing: border-box;
+  color: var(--color-drk-1);
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: var(--font-2);
+  box-sizing: border-box;
+  /* outline: 2px solid pink; */
+}
+
+html {
+  position: relative;
+  font-family: var(--font-2);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+body {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='7rem' width='500px'><text x='0' y='28' fill='%23f5f5f5' font-size='1.5rem'>100101010110011010100101010110100110110111</text><text x='0' y='56' fill='%23f6f6f6' font-size='1.5rem'>010010110101001010101001101010101010100100</text><text x='0' y='84' fill='%23f7f7f7' font-size='1.5rem'>011100011010110111010110101010100010101100</text><text x='0' y='112' fill='%23f6f6f6' font-size='1.5rem'>010010101101010110101110011010100101010110</text></svg>");
+  background-attachment: fixed;
+  background-color: var(--color-lgt-1);
+  overflow-x: hidden;
+  padding-top: 7rem;
+}
+
+body.inactive {
+  background: var(--pri-color-1);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.sub-section {
+  padding-bottom: 5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Scroll bar                                                                */
+/* -------------------------------------------------------------------------- */
+
+/* width */
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  width: 8px;
+  height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin: 0;
+  padding: 10px;
+  background: #c8defb;
+  border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7ba7ff;
+  border-radius: 1rem;
+  height: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: auto 1rem;
+  }
+
+  body{
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}

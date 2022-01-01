@@ -1,0 +1,79 @@
+<section>
+  <div class="container">
+    <h2 class="section-title"><span class="fs-ind">~/</span>about</h2>
+  </div>
+
+  <section class="sub-section container">
+    <div class="bio">
+      <div class="content-right">
+        <img src="./../../../assets/IMG_1055.jpg" alt="Ifedili's image">
+      </div>
+      <div class="content-left">
+        <h2 class="sub-section-title">Hello world</h2>
+        <p>Hi, I’m Ifedili Onyegbu, Software Engineer currently based in Nigeria and I love what I do. In all my years
+          as a Developer and Designer I've craved to reconnect with craftsmanship, to make well designed and efficent
+          systems.</p>
+        <p>I started my career as a freelance designer where I built my fundermentals in the design space. Then I went
+          on to do Frontend development with Angular and then Mobile development with Ionic framework. Rigth now I'm
+          building Web2/3 applications with NodeJS and Solidity as a Backend and Smart Contract Engineer.</p>
+        <p>I'm currently exploring the Web3 space hoping to make a full switch. And on the side I'm also playing around
+          with Golang</p>
+        <p>I'm thrilled by design and logic; and I solve problems for fun. When I'm not working I'm either playing
+          badminton 🏸, whipping my friends on FIFA 🎮, sharing memes 🤡, doing some art work 🎨 or working out at the
+          gym 🏋🏽‍♂️.</p>
+        <p>Because I'm a huge Angular fan ❤️ this site was built with Angular and without any CSS/animation libraries. </p>
+
+        <div class="button-container">
+          <a class="but" title="My resume" target="_blank" rel="noopener"
+            href="https://docs.google.com/document/d/13bHrUjxrfvbK5NK1LI5pbF6YNLaBFyRLnqPKELQCG0E/edit?usp=sharing">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4zM4 16v3h16v-3H4zm0-2h16V7H4v7zM9 3v2h6V3H9zm2 8h2v2h-2v-2z"
+                fill="var(--pri-color-1)" />
+            </svg>
+            <span>My Resume</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <span class="sec-close-bracket">}</span>
+  </section>
+
+
+  <section class="sub-section container">
+    <h2 class="sub-section-title">My Recipes</h2>
+    <div class="tabs">
+      <span [ngClass]="{'active': toolTab == 'Languages'}" class="tab"
+        (click)="switchToolTab('Languages')">Languages</span>
+      <span [ngClass]="{'active': toolTab == 'Web'}" class="tab" (click)="switchToolTab('Web')">Web</span>
+      <!-- <span [ngClass]="{'active': toolTab == 'Mobile'}" class="tab" (click)="switchToolTab('Mobile')">Mobile</span>
+      <span [ngClass]="{'active': toolTab == 'Blockchain'}" class="tab"
+        (click)="switchToolTab('Blockchain')">Blockchain</span> -->
+      <span [ngClass]="{'active': toolTab == 'Design'}" class="tab" (click)="switchToolTab('Design')">Design</span>
+      <span [ngClass]="{'active': toolTab == 'Others'}" class="tab" (click)="switchToolTab('Others')">Others</span>
+    </div>
+    <app-skills [toolsSubject]="toolsSubject"></app-skills>
+    <span class="sec-close-bracket">}</span>
+  </section>
+
+
+  <section class="sub-section container">
+    <h2 class="sub-section-title">Experience</h2>
+    <app-experiences></app-experiences>
+    <span class="sec-close-bracket">}</span>
+  </section>
+
+  <section class="sub-section container">
+    <h2 class="sub-section-title">Features</h2>
+    <div class="tabs">
+      <input type="hidden" value="awards" #tab2>
+      <span [ngClass]="{'active': featTab == 'Award'}" class="tab"
+        (click)="switchFeatureTab('Award')">Achievements</span>
+      <span [ngClass]="{'active': featTab == 'Talk'}" class="tab" (click)="switchFeatureTab('Talk')">Talks</span>
+    </div>
+    <app-achievements [featuresSubject]="featuresSubject"></app-achievements>
+    <span class="sec-close-bracket">}</span>
+  </section>
+</section>

@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  overflow-x: scroll;
+  border-bottom: 1px solid var(--color-drk-5);
+  box-shadow: 0px 3px 15px rgba(19, 19, 19, 0.01);
+}
+
+.tab {
+  color: var(--color-drk-2);
+  background: var(--color-lgt-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.25rem;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.tab.active {
+  /* color: var(--color-lgt-1);*/
+  /*background: var(--pri-color-1);*/
+  color: var(--color-drk-1);
+  border-bottom: 2px solid var(--pri-color-1);
+}

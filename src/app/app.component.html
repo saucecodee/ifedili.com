@@ -1,0 +1,11 @@
+<app-loader *ngIf="isLoading"></app-loader>
+
+<div *ngIf="isActiveBackground">
+  <app-header></app-header>
+
+  <app-menu></app-menu>
+
+  <router-outlet></router-outlet>
+  
+  <app-footer *ngIf="showFooter"></app-footer>
+</div>

@@ -1,0 +1,37 @@
+section{
+  padding-top: 0;
+}
+
+.line{
+  border-top: 1px solid var(--color-drk-5);
+  padding-top: 6rem;
+}
+
+.section-title{
+  margin-bottom: 4rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.footer-txt {
+  max-width: 600px;
+
+  p {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+
+    .footer-socials {
+      margin-bottom: 3rem;
+    }
+  }
+}

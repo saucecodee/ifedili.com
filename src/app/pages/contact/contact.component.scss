@@ -1,0 +1,22 @@
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 4rem;
+}
+
+p {
+  margin-bottom: 5rem;
+  max-width: 700px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 1.5rem;
+  height: 1rem;
+}
+
+.link-outline {
+  margin-right: 0;
+}

@@ -1,0 +1,14 @@
+h1{
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.but{
+  margin-top: 3rem;
+}
+
+@media (max-width: 480px) {
+  h1{
+    font-size: 4rem;
+  }
+}

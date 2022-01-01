@@ -1,0 +1,46 @@
+.bio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 5rem;
+}
+
+.bio .content-right img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+}
+
+.bio .content-left p {
+  margin-bottom: 1.5rem;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-gap: 2rem;
+  align-items: center;
+  margin: 2rem 0 0;
+
+  .but {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bio {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 930px) {
+  .bio {
+    grid-column-gap: 5rem;
+
+    .content-right {
+      padding-bottom: 3rem;
+      padding-top: 0rem;
+    }
+  }
+}

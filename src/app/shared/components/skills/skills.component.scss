@@ -1,0 +1,38 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 201px));
+  grid-gap: 1rem;
+}
+
+.card {
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+
+  img{
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.card-text {
+  background-color: var(--color-lgt-1);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+}

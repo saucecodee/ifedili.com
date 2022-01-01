@@ -1,0 +1,13 @@
+<div id="menu" [ngClass]="{'open': isMenuOpen}">
+  <div class="container">
+    <div class="menu-rigth"> </div>
+    <div class="menu-left">
+      <a class="link-outline nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/">HOME</a>
+      <a class="link-outline nav-link" routerLinkActive="active" routerLink="/projects">PROJECTS</a>
+      <a class="link-outline nav-link" routerLinkActive="active" routerLink="/about">ABOUT</a>
+      <a class="link-outline nav-link" routerLinkActive="active" routerLink="/contact">CONTACT</a>
+    </div>
+
+  </div>
+</div>

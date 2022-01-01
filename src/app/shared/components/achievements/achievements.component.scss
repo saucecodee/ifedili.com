@@ -1,0 +1,26 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 522px));
+  grid-gap: 2rem;
+}
+
+.title{
+  font-family: var(--font-1)
+}
+
+.year{
+  color: var(--color-drk-2);
+  font-size: 0.875rem;
+}
+
+.details{
+  color: var(--color-drk-3);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

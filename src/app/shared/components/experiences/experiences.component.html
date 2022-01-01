@@ -1,0 +1,9 @@
+<ul class="timeline">
+  <li class="timeline-item" *ngFor="let item of list">
+    <div class="card">
+      <h3>{{item.role}} <h4><span>-</span> {{item.company}}</h4></h3>
+      <span class="time-span">{{item.from}} - {{item.to}}</span>
+      <p>{{item.description}}</p>
+    </div>
+  </li>
+</ul>

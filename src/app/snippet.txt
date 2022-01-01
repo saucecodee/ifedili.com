@@ -1,0 +1,17 @@
+  <input type="hidden" #selection>
+
+  <div class="card-container">
+    <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+      <span>New Component</span>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+      <span>Angular Material</span>
+    </button>
+  </div>
+
+
+  <div class="terminal" [ngSwitch]="selection.value">
+    <pre *ngSwitchDefault>ng generate component xyz</pre>
+    <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
+  </div>

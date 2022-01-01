@@ -1,0 +1,11 @@
+<div class="card-container">
+  <div class="card" *ngFor="let item of list">
+    <div class="card-body">
+      <p>
+        <span class="year">{{item.year}}</span> - 
+        <b class="title">{{item.title}}</b>
+      </p>
+      <p class="details">{{item.desc}}</p>
+    </div>
+  </div>
+</div>
