@@ -38,7 +38,7 @@ export class FeaturedProjectComponent implements OnInit {
 
       if (!project.isVisible) willDisplay = false
       if (this.isFeatured == true && project.isFeatured != true) willDisplay = false
-      if (category != null && !project.categories.includes(category)) willDisplay = false
+      if (category != null && project.category !== category) willDisplay = false
 
       if (willDisplay) this.list.push(project)
     }

@@ -22,16 +22,18 @@ export interface ICategory {
 export interface IProject {
   id: string,
   name: string,
+  cover_image: string,
   images: string[],
   about: string[],
   short_desc: string,
   platform: string,
   role: string,
   isFeatured: boolean,
-  categories: Category[]
+  category: Category,
   links: { [id: string]: ILink },
   tools: string[],
-  year: number
+  year: number,
+  isVisible: boolean
 }
 
 export interface IBrand {

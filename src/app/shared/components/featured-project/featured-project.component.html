@@ -1,6 +1,6 @@
 <div class="card-container">
   <div [routerLink]="['/projects', item.id]" class="card" *ngFor="let item of list">
-    <div class="img-container">
+    <div class="img-container" *ngIf="item.category == 'Project'">
       <img src="./../../../../assets/{{item.cover_image}}" class="card-img" alt="{{item.name}}">
     </div>
     <div class="card-footer">
