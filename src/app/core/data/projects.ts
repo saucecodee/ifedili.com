@@ -10,7 +10,9 @@ export default {
     ],
     name: "BàngáJS",
     about: [
-      "BàngáJS is a CLI generator for scaffolding ExpressJS applications and generating application layer files for speed and efficiency.",
+      "BàngáJS is a CLI tool for scaffolding ExpressJS applications and generating application layer files for speed and efficiency.",
+      "Bootstrapping an app and having to deal with creating obvious files can be tasking. BàngáJS saves you that time and eliminates most of the routine tasks. You can bootstrap an entire project and with its feature file on the CLI within seconds.",
+      "This project was inspired by Angular cli. I wanted to have that ease of generating application files on the backend too."
     ],
     short_desc: "A CLI generator for scaffolding ExpressJS applications.",
     platform: "NPM",
@@ -34,7 +36,7 @@ export default {
     ],
     name: "BàngáJS Docs",
     about: [
-      "BàngáJS offical documentation.",
+      "BàngáJS offical documentation website.",
     ],
     short_desc: "BàngáJS documentation.",
     platform: "Web",
@@ -59,7 +61,7 @@ export default {
     ],
     name: "MyGrade",
     about: [
-      "Grade management app for university students",
+      "Grade management app for university students to keep track of their grades across different semesters",
     ],
     short_desc: "Grade management app for university students",
     platform: "Mobile app",
@@ -83,11 +85,11 @@ export default {
     ],
     name: "Ifedili.com",
     about: [
-      "My portfolio website",
+      "This is literally the site you're on. Built with simplicity in mind to achieve a minimalistic design that matches my personality.",
     ],
     short_desc: "My portfolio website",
     platform: "Web",
-    role: "Frontend",
+    role: "Frontend | Design",
     category: "Project",
     isFeatured: false,
     links: {
@@ -108,11 +110,12 @@ export default {
     ],
     name: "PingPong",
     about: [
-      "A web application for recording points of multiple players in a table tennis tournament.",
+      "A web application for recording points of multiple players in a table tennis tournament. It doesn't just record scores, it automatically matches players that should play at each round of the tournament. It also has provision for player elimination after each round",
+      "A little background story: I built this after I was cheated at a table tennis tournament because of a miscount, so I decided to do something about it."
     ],
     short_desc: "A web app for recording table tenis mutiplayer tournament",
     platform: "Web",
-    role: "Frontend",
+    role: "Frontend | Design",
     category: "Playground",
     isFeatured: false,
     links: {
@@ -131,7 +134,7 @@ export default {
     ],
     name: "Unit converter",
     about: [
-      "",
+      "A web app for converting basic measuring units. It's a actually a school assignment but I decided to make it a little more fancy",
     ],
     short_desc: "A web app for converting basic measuring units",
     platform: "Web",
